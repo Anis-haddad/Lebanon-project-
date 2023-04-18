@@ -22,6 +22,7 @@
         </Button>
         <Button Content="Faraya" HorizontalAlignment="Left" Margin="368,202,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click_5"/>
         <Button Content="go back to main page" HorizontalAlignment="Left" Margin="137,269,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="151"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="454,307,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
