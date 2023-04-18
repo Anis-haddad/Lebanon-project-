@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cedar 2.png" />
+    <None Remove="cedar 3.jpg" />
+    <None Remove="cedar.png" />
+    <None Remove="flag.jpg" />
+    <None Remove="folder of cities\beirut street.png" />
+    <None Remove="folder of cities\beirut.png" />
+    <None Remove="map of cities.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cedar 2.png" />
+    <Resource Include="cedar 3.jpg" />
+    <Resource Include="cedar.png" />
+    <Resource Include="flag.jpg" />
+    <Resource Include="folder of cities\beirut street.png" />
+    <Resource Include="folder of cities\beirut.png" />
+    <Resource Include="map of cities.jpg" />
+  </ItemGroup>
+
+</Project>
