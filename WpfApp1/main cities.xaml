@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="main_cities" Height="450" Width="800">
+        Title="main_cities" Height="450" Width="800"
+        Background="#F4E8C1">
     <Grid>
-        <Button Content="Beirut" HorizontalAlignment="Left" Margin="137,124,0,0" VerticalAlignment="Top" Width="132" Click="Button_Click"/>
-        <Button Content="Byblos" HorizontalAlignment="Left" Margin="552,134,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_4"/>
-        <Button Content="Jounieh" HorizontalAlignment="Left" Margin="137,197,0,0" VerticalAlignment="Top" Width="132" Click="Button_Click_2"/>
-        <Button Content="Harrissa" HorizontalAlignment="Left" Margin="365,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="123" Click="Button_Click_3">
+        <Button HorizontalAlignment="Left" Margin="107,54,0,0" VerticalAlignment="Top" Width="132" Click="Button_Click" Height="164" Background="#AB92BF" RenderTransformOrigin="0.536,0.058">
+            <Image Source="folder of cities/beirut.png" Height="138"></Image>
+        </Button>
+        <Button Content="Byblos" HorizontalAlignment="Left" Margin="556,108,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_4"/>
+        <Button Content="Jounieh" HorizontalAlignment="Left" Margin="556,223,0,0" VerticalAlignment="Top" Width="132" Click="Button_Click_2"/>
+        <Button Content="Harrissa" HorizontalAlignment="Left" Margin="369,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="123" Click="Button_Click_3">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -20,9 +23,9 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="Faraya" HorizontalAlignment="Left" Margin="368,202,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click_5"/>
-        <Button Content="go back to main page" HorizontalAlignment="Left" Margin="137,269,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="151"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="454,307,0,0" VerticalAlignment="Top"/>
+        <Button Content="Faraya" HorizontalAlignment="Left" Margin="374,217,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click_5"/>
+        <Button Content="go back to main page" HorizontalAlignment="Left" Margin="118,356,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="151"/>
+        <Label Content="Beirut" HorizontalAlignment="Left" Margin="152,218,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
