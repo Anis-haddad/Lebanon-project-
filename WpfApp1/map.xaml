@@ -15,7 +15,9 @@
         <Button Content="Harrissa" Foreground="White" Background="red" HorizontalAlignment="Left" Margin="446,275,0,0" VerticalAlignment="Top" Width="62" Height="19" Click="Button_Click_5"/>
         <Button Content="Faraya" Foreground="White" Background="red"  HorizontalAlignment="Left" Margin="538,217,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click_6"/>
         <Button Content="Baalbak" Foreground="White" Background="red" HorizontalAlignment="Left" Margin="629,171,0,0" VerticalAlignment="Top" Width="77" Click="Button_Click_4"/>
-         
+        <Label Content="Area of Lebanon 10452 km2" HorizontalAlignment="Left"  FontSize="11" Height="35" Margin="0,42,0,0" VerticalAlignment="Top" Width="248"/>
+        <Label Content="Lebanon has border with two coutries : Syria and Israel" FontSize="11" HorizontalAlignment="Left" Height="31" Margin="0,95,0,0" VerticalAlignment="Top" Width="364"/>
+
 
     </Grid>
 </Window>
