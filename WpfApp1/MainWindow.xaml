@@ -7,141 +7,95 @@
         mc:Ignorable="d"
         
         
-        Title="MainWindow" Height="500" Width="900">
+        Title="MainWindow" Height="720" Width="1280">
 
+    <Window.Resources>
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                        BorderThickness="0"
+                        Padding="4,2" 
+                        BorderBrush="DarkGray" 
+                        CornerRadius="3" 
+                        Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="LightGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+        <Style x:Key="MyButtonStyle2" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                        BorderThickness="0"
+                        Padding="4,2" 
+                        BorderBrush="DarkGray" 
+                        CornerRadius="3" 
+                        Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="Black" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
 
     <Grid>
+        <Image   HorizontalAlignment="Left" Height="214" Margin="450,0,0,0" VerticalAlignment="Center" Width="276" Source="/cedar 3.jpg" Stretch="Fill"/>
+        <DockPanel LastChildFill="False">
+            <DockPanel LastChildFill="False" Background="#FFED4141" DockPanel.Dock="Left" Width="218" HorizontalAlignment="Center"/>
+            <DockPanel LastChildFill="False" DockPanel.Dock="Top" Height="100" Background="#FFFF1200">
+                <Label Content="Welcome to Lebanon" DockPanel.Dock="Top" Height="100" HorizontalAlignment="Center" FontSize="56" FontFamily="Traditional Arabic" FontStyle="Italic"/>
 
-        <TextBlock Text="                                       Welcome to Lebanon" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFFF1200" Width="900" Height="58" FontWeight="UltraBold" FontStretch="Normal" LineStackingStrategy="MaxHeight" TextTrimming="None"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,427,0,0" TextWrapping="Wrap" Foreground="Black" Text="" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" FontFamily="Arial Rounded MT Bold" Height="58" Background="#FFFF1200" Width="900"/>
+            </DockPanel>
+            <DockPanel LastChildFill="False" DockPanel.Dock="Bottom" Height="100" Background="#FFFF1200"/>
 
-
-
-        <Button  Content="Map of Lebanon " HorizontalAlignment="Left" Margin="0,182,0,0"
-                 VerticalAlignment="Top" BorderBrush="Transparent" Width="200" Height="30" Click="Button_Click" Background="#FFFF1200"  >
-            <Button.Effect>
-                <DropShadowEffect Color="LightSlateGray" Direction="315" ShadowDepth="12" Opacity="1" />
-            </Button.Effect>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="RenderTransform">
-                                <Setter.Value>
-                                    <TranslateTransform X="3" Y="3" />
-                                    <!-- Adjust the X and Y values to change the amount of movement -->
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-
-        </Button>
+        </DockPanel>
+        <!--local:AboutUs Margin="221,100,0,0"/-->
 
 
-        <Button Content="main cities "  HorizontalAlignment="Left" Margin="0,121,0,0" VerticalAlignment="Top" Width="200" Height="30"
-         Click="Button_Click_1" BorderBrush="Transparent" Background="#FFFF1200">
+        <Button x:Name="MainCities2" Content="Main Cities" HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MainCitiesMenuButton"/>
+        <Button x:Name="MapOfLebanon" Content="Map of Lebanon" HorizontalAlignment="Left" Margin="0,121,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MapOfLebanon_Click"/>
+        <Button x:Name="ActivitiesToDo" Content="Activities to do" HorizontalAlignment="Left" Margin="0,163,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="ActivitiesToDoClick"/>
+        <Button x:Name="InterestingFacts" Content="Interesting facts about Lebanon" HorizontalAlignment="Left" Margin="0,205,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="InterestingFactsClick"/>
+        <Button x:Name="AboutUS" Content="About us" HorizontalAlignment="Left" Margin="0,247,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="AboutUSClick"/>
+        <Button x:Name="menu" Content="" HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Height="42" Width="16" Style="{StaticResource MyButtonStyle2}" Focusable="False" Background="#FF1B1A1A"/>
+        <local:Menu x:Name="MenuUserControlMenu" Margin="218,93,0,0" Loaded="Menu_Loaded"/>
+        <local:AboutUs x:Name="AboutUsUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
+        <local:MainCitiesUserControl x:Name="MainCitiesUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
 
-            <Button.Effect>
-                <DropShadowEffect Color="LightSlateGray" Direction="315" ShadowDepth="12" Opacity="1" />
-            </Button.Effect>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="RenderTransform">
-                                <Setter.Value>
-                                    <TranslateTransform X="3" Y="3" />
-                                    <!-- Adjust the X and Y values to change the amount of movement -->
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-
-
-        </Button>
-
-
-
-
-
-
-        <Button Content="about us" HorizontalAlignment="Left" Margin="0,353,0,0" VerticalAlignment="Top" Width="200"
-                Height="30" BorderBrush="Transparent" Click="Button_Click_2" Background="#FFFF1200">
-            <Button.Effect>
-                <DropShadowEffect Color="LightSlateGray" Direction="315" ShadowDepth="12" Opacity="1" />
-            </Button.Effect>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="RenderTransform">
-                                <Setter.Value>
-                                    <TranslateTransform X="3" Y="3" />
-                                    <!-- Adjust the X and Y values to change the amount of movement -->
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-
-
-        </Button>
-
-
-
-
-        <Button Content="acticities to do " HorizontalAlignment="Left" Margin="0,242,0,0" 
-                VerticalAlignment="Top" BorderBrush="Transparent" Width="200" Height="30" Click="Button_Click_3" Background="#FFFF1200">
-            <Button.Effect>
-                <DropShadowEffect Color="LightSlateGray" Direction="315" ShadowDepth="12" Opacity="1" />
-            </Button.Effect>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="RenderTransform">
-                                <Setter.Value>
-                                    <TranslateTransform X="3" Y="3" />
-                                    <!-- Adjust the X and Y values to change the amount of movement -->
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
-
-
-
-
-        <Button Content="intresting facts about Lebanon" HorizontalAlignment="Left"
-                VerticalAlignment="Top" Width="200" Height="30" Click="Button_Click_4" BorderBrush="Transparent" Background="#FFFF1200" Margin="0,295,0,0" >
-            <Button.Effect>
-                <DropShadowEffect Color="LightSlateGray" Direction="315" ShadowDepth="12" Opacity="1" />
-            </Button.Effect>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="RenderTransform">
-                                <Setter.Value>
-                                    <TranslateTransform X="3" Y="3" />
-                                    <!-- Adjust the X and Y values to change the amount of movement -->
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
-        <Image   HorizontalAlignment="Left" Height="214" Margin="624,121,0,0" VerticalAlignment="Top" Width="276" Source="/cedar 3.jpg" Stretch="Fill"/>
-
-
+        <!--
+        <Grid Margin="221,205,0,0" x:Name="LayerContainer">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="275*"/>
+                <ColumnDefinition Width="404*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="401*"/>
+            </Grid.RowDefinitions>
+                  </Grid>
+        -->
 
 
 

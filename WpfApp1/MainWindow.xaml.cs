@@ -23,11 +23,13 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
 
-        
 
         public MainWindow()
         {
             InitializeComponent();
+            Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -61,9 +63,46 @@ namespace WpfApp1
             secondWindow.Show();
         }
 
-        private void BG_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void MainCitiesMenuButton(object sender, RoutedEventArgs e)
+        {
+            menu.Margin = MainCities2.Margin;
+            Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MainCitiesUserControlMenu, int.MaxValue);
+        }
+
+        private void MapOfLebanon_Click(object sender, RoutedEventArgs e)
+        {
+            menu.Margin = MapOfLebanon.Margin;
+        }
+
+        private void ActivitiesToDoClick(object sender, RoutedEventArgs e)
+        {
+            menu.Margin = ActivitiesToDo.Margin;
+        }
+
+        private void InterestingFactsClick(object sender, RoutedEventArgs e)
+        {
+            menu.Margin = InterestingFacts.Margin;
+        }
+
+        private void AboutUSClick(object sender, RoutedEventArgs e)
+        {
+            menu.Margin = AboutUS.Margin;
+            Grid.SetZIndex(AboutUsUserControlMenu, int.MaxValue);
+            Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
+
+            // LayerContainer.Children.Clear();
+
+            // UserControl layer1 = new UserControl();
+            // LayerContainer.Children.Add(layer1);
+        }
+
+        private void Menu_Loaded(object sender, RoutedEventArgs e)
         {
 
         }
+
     }
 }

@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="WpfApp1.AboutUs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="611" d:DesignWidth="1062">
+    <Grid Background="#FFDC5757">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="698,479,0,0" VerticalAlignment="Top" Height="84" Width="248"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,8,0,0" TextWrapping="Wrap" Text="Welcome to our application! We are a team of three computer engineering students who are passionate about helping travelers explore new destinations.
+
+Our mission is to create a user-friendly application that makes it easy for tourists to discover  Lebanon and see the local attractions, find the best places to eat and stay, and connect with knowledgeable guides.
+
+As computer engineering students, we have a deep understanding of the technology behind our application, and we are committed to creating a seamless and reliable experience for our users. We have designed our application to be accessible to travelers of all ages and backgrounds, and we are constantly working to improve and update our features to meet the changing needs of our users.
+
+Our team is dedicated to making travel more enjoyable and accessible for everyone. We believe that by providing travelers with the information and resources they need to make informed decisions, we can help them create unforgettable memories and experiences.
+
+Thank you for choosing our application as your travel companion. We are excited to be a part of your journey, and we look forward to helping you discover new adventures and explore the world." VerticalAlignment="Top" Width="942" RenderTransformOrigin="0.5,0.5" Height="418" FontSize="20" FontStyle="Italic" FontWeight="Heavy">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.002"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+    </Grid>
+</UserControl>
