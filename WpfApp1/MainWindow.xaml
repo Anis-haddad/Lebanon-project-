@@ -84,6 +84,8 @@
         <local:AboutUs x:Name="AboutUsUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:MainCitiesUserControl x:Name="MainCitiesUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:MapOfLebanonUserControl x:Name="MapOfLebanonUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
+        <local:ActivitiesToDoUserControl x:Name="ActivitiesToDoUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
+        <local:IntrestingFactsAboutLebanonUserControl x:Name="IntrestingFactAboutLebanonUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
 
         <!--
         <Grid Margin="221,205,0,0" x:Name="LayerContainer">
