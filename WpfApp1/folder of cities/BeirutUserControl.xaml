@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="WpfApp1.folder_of_cities.BeirutUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.folder_of_cities"
+             mc:Ignorable="d" 
+             d:DesignHeight="611" d:DesignWidth="1062" Background="#FF51EC4C">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="254" Margin="123,90,0,0" VerticalAlignment="Top" Width="203" Source="/folder of cities/beirut.png"/>
+        <Image HorizontalAlignment="Left" Height="301" Margin="531,66,0,0" VerticalAlignment="Top" Width="399" Source="/folder of cities/beirut street.png"/>
+        <Button Content="Go back to visit more cities" HorizontalAlignment="Left" Margin="306,440,0,0" VerticalAlignment="Top"/>
+        <Label Content="Beirut" HorizontalAlignment="Left" Margin="346,26,0,0" VerticalAlignment="Top" Height="83" Width="228" FontSize="48"/>
+
+    </Grid>
+</UserControl>

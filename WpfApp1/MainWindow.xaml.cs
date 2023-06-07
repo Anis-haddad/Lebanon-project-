@@ -44,8 +44,7 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            main_cities secondWindow = new main_cities();
-            secondWindow.Show();
+            
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -119,6 +118,7 @@ namespace WpfApp1
             Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
             Grid.SetZIndex(ActivitiesToDoUserControl, int.MinValue);
             Grid.SetZIndex(IntrestingFactAboutLebanonUserControl, int.MinValue);
+
 
             // LayerContainer.Children.Clear();
 

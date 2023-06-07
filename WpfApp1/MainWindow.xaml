@@ -1,9 +1,10 @@
-﻿<Window x:Name="window" x:Class="WpfApp1.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+        xmlns:folder_of_cities="clr-namespace:WpfApp1.folder_of_cities" x:Name="window" x:Class="WpfApp1.MainWindow"
         mc:Ignorable="d"
         
         
@@ -11,13 +12,13 @@
 
     <Window.Resources>
         <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
-        <Style x:Key="MyButtonStyle" TargetType="Button">
+        <Style x:Key="MyButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="OverridesDefaultStyle" Value="True"/>
             <Setter Property="Margin" Value="5"/>
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Name="border" 
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" 
                         BorderThickness="0"
                         Padding="4,2" 
                         BorderBrush="DarkGray" 
@@ -35,13 +36,13 @@
             </Setter>
         </Style>
         <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
-        <Style x:Key="MyButtonStyle2" TargetType="Button">
+        <Style x:Key="MyButtonStyle2" TargetType="{x:Type Button}">
             <Setter Property="OverridesDefaultStyle" Value="True"/>
             <Setter Property="Margin" Value="5"/>
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Name="border" 
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" 
                         BorderThickness="0"
                         Padding="4,2" 
                         BorderBrush="DarkGray" 
@@ -71,6 +72,31 @@
             <DockPanel LastChildFill="False" DockPanel.Dock="Bottom" Height="100" Background="#FFFF1200"/>
 
         </DockPanel>
+
+        <!--
+        <Grid Margin="221,205,0,0" x:Name="LayerContainer">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="275*"/>
+                <ColumnDefinition Width="404*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="401*"/>
+            </Grid.RowDefinitions>
+                  </Grid>
+        -->
+
+
+
+
+
+
+
+
+
+
+
+
         <!--local:AboutUs Margin="221,100,0,0"/-->
 
 
@@ -86,19 +112,6 @@
         <local:MapOfLebanonUserControl x:Name="MapOfLebanonUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:ActivitiesToDoUserControl x:Name="ActivitiesToDoUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:IntrestingFactsAboutLebanonUserControl x:Name="IntrestingFactAboutLebanonUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
-
-        <!--
-        <Grid Margin="221,205,0,0" x:Name="LayerContainer">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="275*"/>
-                <ColumnDefinition Width="404*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="401*"/>
-            </Grid.RowDefinitions>
-                  </Grid>
-        -->
 
 
 
