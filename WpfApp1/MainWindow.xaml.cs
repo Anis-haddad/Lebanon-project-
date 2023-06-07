@@ -28,8 +28,9 @@ namespace WpfApp1
         {
             InitializeComponent();
             Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
-            Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MenuUserControlMenu, int.MaxValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -69,11 +70,16 @@ namespace WpfApp1
             Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
             Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MaxValue);
+            Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
         }
 
         private void MapOfLebanon_Click(object sender, RoutedEventArgs e)
         {
             menu.Margin = MapOfLebanon.Margin;
+            Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MapOfLebanonUserControl, int.MaxValue);
         }
 
         private void ActivitiesToDoClick(object sender, RoutedEventArgs e)
@@ -92,6 +98,7 @@ namespace WpfApp1
             Grid.SetZIndex(AboutUsUserControlMenu, int.MaxValue);
             Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
 
             // LayerContainer.Children.Clear();
 
