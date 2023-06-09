@@ -11,6 +11,35 @@
             <RowDefinition Height="221*"/>
             <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
+        <RichTextBox Margin="134,86,90,179">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="1. Lebanon is one of the oldest inhabited countries in the world, with evidence of human presence dating back over 7,000 years.
+                                             2. Lebanon is known as the Land of the Cedars due to its iconic cedar trees, which are featured on the country's flag.
+                                                                3. Beirut, the capital of Lebanon, was once known as the Paris of the Middle East for its vibrant cultural scene and cosmopolitan atmosphere.
+                                                               4. Lebanon is home to a diverse population, consisting of various religious and ethnic groups, including Maronite Christians, Sunni and Shia Muslims, and Druze.
+
+                                                                                                                                                                   
+                                                                
+                                                   5. The Lebanese cuisine is renowned worldwide for its delicious flavors and variety. It includes popular dishes like hummus, falafel, tabbouleh, and shawarma.
+
+                                                  
+                                                                                                             
+                                                                                                                 6. Byblos, an ancient city in Lebanon, is one of the oldest continuously inhabited cities in the world and is recognized as a UNESCO World Heritage Site.
+                         7. Lebanon has a rich history of winemaking, with vineyards dating back thousands of years. The country produces a wide range of wines, especially in the Bekaa Valley region.
+
+                                                                     
+                                                        
+                                                                
+                                               8. The Baalbek Temple complex in Lebanon is a remarkable archaeological site and is home to some of the largest Roman ruins in the world, including the Temple of Jupiter.
+
+                                                       
+                                                              
+                                                             
+                                                                        9. Lebanon has a diverse landscape that includes beautiful coastline, snow-capped mountains, fertile valleys, and picturesque villages."/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
     </Grid>
 </UserControl>

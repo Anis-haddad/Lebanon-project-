@@ -7,6 +7,25 @@
              mc:Ignorable="d" 
              d:DesignHeight="611" d:DesignWidth="1062" Background="#FFECEE17">
     <Grid>
-            
+        <RichTextBox HorizontalAlignment="Left" Height="204" Margin="10,125,0,0" VerticalAlignment="Top" Width="933">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="1. Explore the historic city of Byblos: Visit ancient ruins, stroll through the charming streets, and enjoy the coastal views.
+                                                                                     2. Discover the natural beauty of Jeita Grotto: Explore the fascinating underground caves and marvel at the stunning stalactites and stalagmites.
+
+                                              3. Relax on the pristine beaches of Batroun or Tyre: Enjoy sunbathing, swimming, and water sports in these coastal towns.
+                                                                                      4. Take a hike in the stunning Kadisha Valley: Enjoy breathtaking landscapes, visit monasteries, and immerse yourself in nature.
+                                                                                      5. Visit the vibrant capital city of Beirut: Experience the lively nightlife, indulge in delicious cuisine, and explore cultural attractions like the National Museum.
+                                              6. Enjoy outdoor activities in the picturesque Chouf Mountains: Go hiking, biking, or simply enjoy a picnic surrounded by scenic beauty.
+                                                              7. Visit the Roman ruins of Baalbek: Marvel at the majestic temples and ruins of this UNESCO World Heritage site.
+                                                                                                   8. Discover the charming village of Harissa: Visit the iconic Our Lady of Lebanon statue, take in panoramic views, and explore the religious sites.
+                                                                                          9. Explore the picturesque vineyards of the Bekaa Valley: Take a wine tour, taste local wines, and enjoy the beautiful surroundings.
+                                                                            10. Experience Lebanese hospitality and cuisine: Indulge in traditional dishes, enjoy mezze, and savor the rich flavors of Lebanese food.
+
+"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
     </Grid>
 </UserControl>
