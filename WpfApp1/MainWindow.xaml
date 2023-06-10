@@ -105,13 +105,16 @@
         <Button x:Name="ActivitiesToDo" Content="Activities to do" HorizontalAlignment="Left" Margin="0,163,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="ActivitiesToDoClick"/>
         <Button x:Name="InterestingFacts" Content="Interesting facts about Lebanon" HorizontalAlignment="Left" Margin="0,205,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="InterestingFactsClick"/>
         <Button x:Name="AboutUS" Content="About us" HorizontalAlignment="Left" Margin="0,247,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="AboutUSClick"/>
+        <Button x:Name="QUIZbutton" Content="Quiz" HorizontalAlignment="Left" Margin="0,290,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="QuizButtonClick"/>
         <Button x:Name="menu" Content="" HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Height="42" Width="16" Style="{StaticResource MyButtonStyle2}" Focusable="False" Background="#FF1B1A1A"/>
+        
         <local:Menu x:Name="MenuUserControlMenu" Margin="218,93,0,0" Loaded="Menu_Loaded"/>
         <local:AboutUs x:Name="AboutUsUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:MainCitiesUserControl x:Name="MainCitiesUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:MapOfLebanonUserControl x:Name="MapOfLebanonUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:ActivitiesToDoUserControl x:Name="ActivitiesToDoUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:IntrestingFactsAboutLebanonUserControl x:Name="IntrestingFactAboutLebanonUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
+        <local:QuizUserControl x:Name="QuizUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
 
 
 

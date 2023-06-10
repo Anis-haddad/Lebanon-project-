@@ -33,6 +33,7 @@ namespace WpfApp1
             Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
             Grid.SetZIndex(ActivitiesToDoUserControl, int.MinValue);
             Grid.SetZIndex(IntrestingFactAboutLebanonUserControl, int.MinValue);
+            Grid.SetZIndex(QuizUserControl, int.MinValue);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -74,6 +75,7 @@ namespace WpfApp1
             Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
             Grid.SetZIndex(ActivitiesToDoUserControl, int.MinValue);
             Grid.SetZIndex(IntrestingFactAboutLebanonUserControl, int.MinValue);
+            Grid.SetZIndex(QuizUserControl, int.MinValue);
         }
 
         private void MapOfLebanon_Click(object sender, RoutedEventArgs e)
@@ -85,6 +87,7 @@ namespace WpfApp1
             Grid.SetZIndex(MapOfLebanonUserControl, int.MaxValue);
             Grid.SetZIndex(ActivitiesToDoUserControl, int.MinValue);
             Grid.SetZIndex(IntrestingFactAboutLebanonUserControl, int.MinValue);
+            Grid.SetZIndex(QuizUserControl, int.MinValue);
         }
 
         private void ActivitiesToDoClick(object sender, RoutedEventArgs e)
@@ -96,6 +99,7 @@ namespace WpfApp1
             Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
             Grid.SetZIndex(ActivitiesToDoUserControl, int.MaxValue);
             Grid.SetZIndex(IntrestingFactAboutLebanonUserControl, int.MinValue);
+            Grid.SetZIndex(QuizUserControl, int.MinValue);
         }
 
         private void InterestingFactsClick(object sender, RoutedEventArgs e)
@@ -107,6 +111,7 @@ namespace WpfApp1
             Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
             Grid.SetZIndex(ActivitiesToDoUserControl, int.MinValue);
             Grid.SetZIndex(IntrestingFactAboutLebanonUserControl, int.MaxValue);
+            Grid.SetZIndex(QuizUserControl, int.MinValue);
         }
 
         private void AboutUSClick(object sender, RoutedEventArgs e)
@@ -118,18 +123,29 @@ namespace WpfApp1
             Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
             Grid.SetZIndex(ActivitiesToDoUserControl, int.MinValue);
             Grid.SetZIndex(IntrestingFactAboutLebanonUserControl, int.MinValue);
-
+            Grid.SetZIndex(QuizUserControl, int.MinValue);
 
             // LayerContainer.Children.Clear();
 
             // UserControl layer1 = new UserControl();
             // LayerContainer.Children.Add(layer1);
         }
-
+        private void QuizButtonClick(object sender, RoutedEventArgs e)
+        {
+            menu.Margin = QUIZbutton.Margin;
+            Grid.SetZIndex(AboutUsUserControlMenu, int.MaxValue);
+            Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
+            Grid.SetZIndex(MapOfLebanonUserControl, int.MinValue);
+            Grid.SetZIndex(ActivitiesToDoUserControl, int.MinValue);
+            Grid.SetZIndex(IntrestingFactAboutLebanonUserControl, int.MinValue);
+            Grid.SetZIndex(QuizUserControl, int.MaxValue);
+        }
         private void Menu_Loaded(object sender, RoutedEventArgs e)
         {
 
         }
 
+        
     }
 }
