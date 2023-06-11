@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="611" d:DesignWidth="1062" Background="#FF1BEBEF">
 
-        <Canvas Name="myCanvas" Background="DarkGray">
+    <Canvas Name="myCanvas" Background="#003366">
             <Label Name="scoreText" FontSize="18">Score: 0/10</Label>
             <Label Name="questionOrder" FontSize="18" Canvas.Left="349">Questions</Label>
             <Image Name="qImage" Source="asset/cedar.jpg" Stretch="Uniform" Height="286" Width="572" Canvas.Left="104" Canvas.Top="39" />

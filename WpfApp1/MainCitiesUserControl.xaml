@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:WpfApp1"
              xmlns:folder_of_cities="clr-namespace:WpfApp1.folder_of_cities" x:Class="WpfApp1.MainCitiesUserControl"
              mc:Ignorable="d" 
-             d:DesignHeight="611" d:DesignWidth="1062">
-    <Grid Background="#FF469C92">
+             d:DesignHeight="611" d:DesignWidth="1062" Background="#003366">
+    <Grid Background="#003366">
         <Button HorizontalAlignment="Left" Margin="107,54,0,0" VerticalAlignment="Top" Width="132" Height="164" Background="#AB92BF" RenderTransformOrigin="0.536,0.058" Click="BeirutButton">
             <Image Source="folder of cities/beirut.png" Height="138"/>
         </Button>
@@ -32,7 +32,7 @@
             <folder_of_cities:HarrissaCityUserControl x:Name="HarrissaCityIsACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062"/>
             <folder_of_cities:BaalbakCityUserControl x:Name="BaalbakCityIsaCity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062"/>
             <folder_of_cities:ByblosCityUserControl x:Name="ByblosCityIsACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062"/>
-            <folder_of_cities:FarayaCityUserControl x:Name="FarayaCityIsACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062"/>
+            <folder_of_cities:FarayaCityUserControl x:Name="FarayaCityIsACity" Background="#003366" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062"/>
         </Grid>
        </Grid>
 

@@ -28,7 +28,7 @@
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="LightGray" />
+                                <Setter TargetName="border" Property="Background" Value="black" />
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -64,12 +64,12 @@
     <Grid>
         <Image   HorizontalAlignment="Left" Height="214" Margin="450,0,0,0" VerticalAlignment="Center" Width="276" Source="/cedar 3.jpg" Stretch="Fill"/>
         <DockPanel LastChildFill="False">
-            <DockPanel LastChildFill="False" Background="#FFED4141" DockPanel.Dock="Left" Width="218" HorizontalAlignment="Center"/>
-            <DockPanel LastChildFill="False" DockPanel.Dock="Top" Height="100" Background="#FFFF1200">
-                <Label Content="Welcome to Lebanon" DockPanel.Dock="Top" Height="100" HorizontalAlignment="Center" FontSize="56" FontFamily="Traditional Arabic" FontStyle="Italic"/>
+            <DockPanel LastChildFill="False" Background="#00264d" DockPanel.Dock="Left" Width="218" HorizontalAlignment="Center"/>
+            <DockPanel LastChildFill="False" DockPanel.Dock="Top" Height="100" Background="#00264d">
+                <Label Content="Welcome to Lebanon" Foreground="#33d6ff" FontWeight="ExtraBold" DockPanel.Dock="Top" Height="100" HorizontalAlignment="Center" FontSize="76" FontFamily="Traditional Arabic" FontStyle="Italic"/>
 
             </DockPanel>
-            <DockPanel LastChildFill="False" DockPanel.Dock="Bottom" Height="100" Background="#FFFF1200"/>
+            <DockPanel LastChildFill="False" DockPanel.Dock="Bottom" Height="100" Background="#00264d"/>
 
         </DockPanel>
 
@@ -100,14 +100,14 @@
         <!--local:AboutUs Margin="221,100,0,0"/-->
 
 
-        <Button x:Name="MainCities2" Content="Main Cities" HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MainCitiesMenuButton"/>
-        <Button x:Name="MapOfLebanon" Content="Map of Lebanon" HorizontalAlignment="Left" Margin="0,121,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MapOfLebanon_Click"/>
-        <Button x:Name="ActivitiesToDo" Content="Activities to do" HorizontalAlignment="Left" Margin="0,163,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="ActivitiesToDoClick"/>
-        <Button x:Name="InterestingFacts" Content="Interesting facts about Lebanon" HorizontalAlignment="Left" Margin="0,205,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="InterestingFactsClick"/>
-        <Button x:Name="AboutUS" Content="About us" HorizontalAlignment="Left" Margin="0,247,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="AboutUSClick"/>
-        <Button x:Name="QUIZbutton" Content="Quiz" HorizontalAlignment="Left" Margin="0,290,0,0" VerticalAlignment="Top" Height="42" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="QuizButtonClick"/>
-        <Button x:Name="menu" Content="" HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Height="42" Width="16" Style="{StaticResource MyButtonStyle2}" Focusable="False" Background="#FF1B1A1A"/>
-        
+        <Button x:Name="MainCities2" Foreground="#33d6ff" FontSize="17" FontWeight="ExtraBold"  Content="Main Cities" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MainCitiesMenuButton"/>
+        <Button x:Name="MapOfLebanon" Foreground="#33d6ff" FontSize="17" FontWeight="ExtraBold" Content="Map of Lebanon" HorizontalAlignment="Left" Margin="0,210,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MapOfLebanon_Click"/>
+        <Button x:Name="ActivitiesToDo" Foreground="#33d6ff" FontSize="17" FontWeight="ExtraBold" Content="Activities to do" HorizontalAlignment="Left" Margin="0,310,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="ActivitiesToDoClick"/>
+        <Button x:Name="InterestingFacts" Foreground="#33d6ff" FontSize="17" FontWeight="ExtraBold"  Content="    Interesting facts " HorizontalAlignment="Left" Margin="0,410,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="InterestingFactsClick"/>
+        <Button x:Name="AboutUS" Content="About us" Foreground="#33d6ff" FontWeight="ExtraBold" FontSize="17" HorizontalAlignment="Left" Margin="0,510,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="AboutUSClick"/>
+        <Button x:Name="QUIZbutton" Content="Quiz"  Foreground="#33d6ff" FontWeight="ExtraBold" FontSize="17" HorizontalAlignment="Left" Margin="0,610,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="QuizButtonClick"/>
+        <Button x:Name="menu" Content="" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Height="70" Width="16" Style="{StaticResource MyButtonStyle2}" Focusable="False" Background="#80bfff" Click="menu_Click"/>
+
         <local:Menu x:Name="MenuUserControlMenu" Margin="218,93,0,0" Loaded="Menu_Loaded"/>
         <local:AboutUs x:Name="AboutUsUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
         <local:MainCitiesUserControl x:Name="MainCitiesUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>

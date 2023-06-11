@@ -5,27 +5,52 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
-             d:DesignHeight="611" d:DesignWidth="1062" Background="#FFECEE17">
+             d:DesignHeight="611" d:DesignWidth="1062" Background="#003366">
+
+
+
+    <UserControl.Resources>
+        <!-- Define the style for the labels -->
+        <Style TargetType="Label" x:Key="ModernLabelStyle">
+            <Setter Property="Background" Value="#80bfff" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="35" />
+
+
+
+        </Style>
+
+
+
+    </UserControl.Resources>
+    <!--<Grid>
+        <Label Content="Label 1" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource ModernLabelStyle}" />
+        <Label Content="Label 2" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource ModernLabelStyle}" />
+        <Label Content="Label 3" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource ModernLabelStyle}" />
+    </Grid>-->
     <Grid>
-        <RichTextBox HorizontalAlignment="Left" Height="204" Margin="10,125,0,0" VerticalAlignment="Top" Width="933">
-            <FlowDocument>
-                <Paragraph>
-                    <Run Text="1. Explore the historic city of Byblos: Visit ancient ruins, stroll through the charming streets, and enjoy the coastal views.
-                                                                                     2. Discover the natural beauty of Jeita Grotto: Explore the fascinating underground caves and marvel at the stunning stalactites and stalagmites.
-
-                                              3. Relax on the pristine beaches of Batroun or Tyre: Enjoy sunbathing, swimming, and water sports in these coastal towns.
-                                                                                      4. Take a hike in the stunning Kadisha Valley: Enjoy breathtaking landscapes, visit monasteries, and immerse yourself in nature.
-                                                                                      5. Visit the vibrant capital city of Beirut: Experience the lively nightlife, indulge in delicious cuisine, and explore cultural attractions like the National Museum.
-                                              6. Enjoy outdoor activities in the picturesque Chouf Mountains: Go hiking, biking, or simply enjoy a picnic surrounded by scenic beauty.
-                                                              7. Visit the Roman ruins of Baalbek: Marvel at the majestic temples and ruins of this UNESCO World Heritage site.
-                                                                                                   8. Discover the charming village of Harissa: Visit the iconic Our Lady of Lebanon statue, take in panoramic views, and explore the religious sites.
-                                                                                          9. Explore the picturesque vineyards of the Bekaa Valley: Take a wine tour, taste local wines, and enjoy the beautiful surroundings.
-                                                                            10. Experience Lebanese hospitality and cuisine: Indulge in traditional dishes, enjoy mezze, and savor the rich flavors of Lebanese food.
-
-"/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
+        <Label Content="1. Explore the historic city of Byblos: Visit ancient ruins, stroll through the charming streets, and enjoy the coastal views." HorizontalAlignment="Left" Background="#80bfff"  Height="35" Margin="15,50,0,0" VerticalAlignment="Top" Width="1040" Style="{StaticResource ModernLabelStyle}" RenderTransformOrigin="0.5,0.5" >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.034"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="    2. Relax on the pristine beaches of Batroun or Tyre: Enjoy sunbathing, swimming, and water sports in these coastal towns.
+                                               
+" HorizontalAlignment="Left" Margin="15,150,0,0" VerticalAlignment="Top" Height="35" Width="1040"  Background="#80bfff" Style="{StaticResource ModernLabelStyle}" />
+        <Label Content="3. Take a hike in the stunning Kadisha Valley: Enjoy breathtaking landscapes, visit monasteries, and immerse yourself in nature.
+                                     " HorizontalAlignment="Left" Margin="15,250,0,0" VerticalAlignment="Top" Height="35" Width="1040"  Background="#80bfff" Style="{StaticResource ModernLabelStyle}" />
+        <Label Content="4. Enjoy outdoor activities in the picturesque Chouf Mountains: Go hiking, biking, or simply enjoy a picnic surrounded by scenic beauty.
+                                                " HorizontalAlignment="Left" Margin="15,350,0,0" VerticalAlignment="Top" Height="35" Width="1040"  Background="#80bfff"  Style="{StaticResource ModernLabelStyle}" />
+        <Label Content="5. Visit the Roman ruins of Baalbek: Marvel at the majestic temples and ruins of this UNESCO World Heritage site.
+                                                               " HorizontalAlignment="Left" Margin="15,450,0,0" VerticalAlignment="Top" Height="35" Width="1040"  Background="#80bfff"  Style="{StaticResource ModernLabelStyle}" />
+        <Label Content="6. Explore the picturesque vineyards of the Bekaa Valley: Take a wine tour, taste local wines, and enjoy the beautiful surroundings.
+                                          " HorizontalAlignment="Left" Margin="15,550,0,0" VerticalAlignment="Top" Height="35" Width="1040"  Background="#80bfff" Style="{StaticResource ModernLabelStyle}" />
 
     </Grid>
 </UserControl>

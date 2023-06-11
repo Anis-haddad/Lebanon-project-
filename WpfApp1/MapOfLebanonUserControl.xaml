@@ -6,9 +6,9 @@
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
              d:DesignHeight="611" d:DesignWidth="1062" Background="#FFCE00FF">
-    <Grid Background="GhostWhite">
-        <Image HorizontalAlignment="Left" Visibility="Visible" Stretch="fill" Source="/map of cities.jpg" Height="611" VerticalAlignment="Center" Width="525"/>
-        <RichTextBox Margin="531,108,16,383">
+    <Grid Background="#003366">
+        <Image HorizontalAlignment="Left" Visibility="Visible"  Stretch="fill" Source="/map of cities.jpg" Height="591" VerticalAlignment="Center" Width="525"/>
+        <RichTextBox Margin="531,108,16,382" Background="#80bfff" FontSize="17" FontWeight="ExtraBold">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="Lebanon shares borders with Syria to the north and east, and Israel to the south. Its western coastline stretches along the Mediterranean Sea.
