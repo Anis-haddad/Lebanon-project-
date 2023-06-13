@@ -35,9 +35,9 @@
     </UserControl.Resources>
 
     <Canvas Name="myCanvas" Background="#003366">
-        <Label Name="scoreText" FontSize="28" Height="74" Width="355" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF33D6FF">Score: 0/10</Label>
+        <Label Name="scoreText" FontSize="28" Height="74" Width="355" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF33D6FF">Score: 0/10</Label>
         <Label Name="questionOrder" FontSize="18" Canvas.Left="420" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden">Questions</Label>
-        <Image Name="qImage" Source="flag.jpg" Stretch="Uniform" Height="190" Width="292" Canvas.Left="322" Canvas.Top="95" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Image x:Name="qImage" Source="/Question3.png" Height="190" Width="292" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="319" Canvas.Top="103" Stretch="Fill" />
         <TextBlock Name="txtQuestion" TextAlignment="Center" Padding="3" FontSize="20" Width="722" TextWrapping="Wrap" Canvas.Left="104" Canvas.Top="330" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF33D6FF">
             Hi welcome to this quiz game and we will be showing lots of different questions and you will click on the answer buttons to answer them.
         </TextBlock>
@@ -45,5 +45,6 @@
         <Button Foreground="#33d6ff" FontSize="18" Click="checkAnswer" Name="ans2" Width="350" Height="50" Content="Answer 2" Tag="0" Canvas.Left="104" Canvas.Top="509" Style="{StaticResource MyButtonStyle}"/>
         <Button Foreground="#33d6ff" FontSize="18" Click="checkAnswer" Name="ans3" Width="350" Height="50" Content="Answer 3" Tag="0" Canvas.Left="476" Canvas.Top="434" Style="{StaticResource MyButtonStyle}"/>
         <Button Foreground="#33d6ff" FontSize="18" Click="checkAnswer" Name="ans4" Width="350" Height="50" Content="Answer 4" Tag="0" Canvas.Left="476" Canvas.Top="509" Style="{StaticResource MyButtonStyle}"/>
+        <Button Foreground="#33d6ff" FontSize="18" Name="TryAgainQuiz" Content="Try again" Canvas.Left="379" Canvas.Top="389" Style="{StaticResource MyButtonStyle}" Height="42" Width="151" Visibility="Hidden" Click="RestartGame"/>
     </Canvas>
 </UserControl>

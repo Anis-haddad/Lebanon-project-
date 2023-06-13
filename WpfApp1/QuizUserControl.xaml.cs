@@ -50,7 +50,7 @@ namespace WpfApp1
             // if the qnum is less than 0 then we will reset the qnum integer to 0
             if (qNum < 0)
             {
-                qNum = 11;
+                qNum = 0;
             }
             else
             {
@@ -81,7 +81,16 @@ namespace WpfApp1
             else
             {
                 // if we have done below the number of questions we have available then we will restart the game
-                RestartGame();
+                //RestartGame();
+                ans1.Visibility = Visibility.Hidden; 
+                ans2.Visibility=Visibility.Hidden;
+                ans3.Visibility=Visibility.Hidden; 
+                ans4.Visibility=Visibility.Hidden;
+                txtQuestion.Visibility=Visibility.Hidden;
+                qImage.Visibility=Visibility.Hidden;
+                Canvas.SetLeft(scoreText, 319);
+                Canvas.SetTop(scoreText, 103);
+                TryAgainQuiz.Visibility = Visibility.Visible;
             }
             // below we are running a foreach loop where will check for each button inside of the canvas and when we find them we will set their tag to 0 and background to dakr salmon colour
             foreach (var x in myCanvas.Children.OfType<Button>())
@@ -107,7 +116,8 @@ namespace WpfApp1
                     //qImage.Source = new BitmapImage(new Uri("cedar 2.png")); // here we will load the 1st image inside of the qimage 
                     //string abc = "/Images/Quiz/Question1.png";
                     //BitmapImage bitmap = new BitmapImage(new Uri("cedar 2.png"));
-                    //qImage.Source = new BitmapImage(new Uri(abc));
+                    //Uri imageUri = new Uri("Images/Quiz/Question1.png");
+                    qImage.Source = new BitmapImage(new Uri("/Question1.png", UriKind.Relative));
                     break; // when this condition is met the program will break the switch statement here and wait for the next one
                            // rest of the condition will follow the same principle as this one
                 case 2:
@@ -117,7 +127,7 @@ namespace WpfApp1
                     ans3.Content = "10452 km2";
                     ans4.Content = "17230 km2";
                     ans3.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question2.png", UriKind.Relative));
                     break;
                 case 3:
                     txtQuestion.Text = "Lebanon has access to the: ";
@@ -126,7 +136,7 @@ namespace WpfApp1
                     ans3.Content = "Red sea";
                     ans4.Content = "Baltic sea";
                     ans1.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question3.png", UriKind.Relative));
                     break;
                 case 4:
                     txtQuestion.Text = "How many religions The country recognizes:";
@@ -135,7 +145,7 @@ namespace WpfApp1
                     ans3.Content = "10 religious communities";
                     ans4.Content = "6 religious communities";
                     ans1.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question4.png", UriKind.Relative));
                     break;
                 case 5:
                     txtQuestion.Text = "What is the capital city of Lebanon?";
@@ -144,7 +154,7 @@ namespace WpfApp1
                     ans3.Content = "Harrissa";
                     ans4.Content = "Byblos";
                     ans1.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question5.png", UriKind.Relative));
                     break;
                 case 6:
                     txtQuestion.Text = "how much is the highest mountain in Lebanon?";
@@ -153,7 +163,7 @@ namespace WpfApp1
                     ans3.Content = "6900 meters";
                     ans4.Content = "4532 meters";
                     ans1.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question6.png", UriKind.Relative));
                     break;
                 case 7:
                     txtQuestion.Text = "What is the type of authority in Lebanon";
@@ -162,7 +172,7 @@ namespace WpfApp1
                     ans3.Content = "Dictatorship";
                     ans4.Content = "Federalism";
                     ans1.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question7.png", UriKind.Relative));
                     break;
                 case 8:
                     txtQuestion.Text = "In what year Lebanon got its independence ";
@@ -171,7 +181,7 @@ namespace WpfApp1
                     ans3.Content = "2000";
                     ans4.Content = "1955";
                     ans1.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question8.jpg", UriKind.Relative));
                     break;
                 case 9:
                     txtQuestion.Text = "What is main language in lebanon";
@@ -180,7 +190,7 @@ namespace WpfApp1
                     ans3.Content = "Persian";
                     ans4.Content = "Hebrew";
                     ans1.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question9.jpg", UriKind.Relative));
                     break;
                 case 10:
                     txtQuestion.Text = "When was the city of Byblos founded?";
@@ -189,7 +199,7 @@ namespace WpfApp1
                     ans3.Content = "3800 years ago";
                     ans4.Content = "5000 years ago";
                     ans4.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    qImage.Source = new BitmapImage(new Uri("/Question10.jpg", UriKind.Relative));
                     break;
             }
         }
@@ -206,12 +216,29 @@ namespace WpfApp1
             // run a for loop to add the value which will display the randomised list to the display so we can see how the list has been ramdomised
             for (int i = 0; i < questionNumbers.Count; i++)
             {
-                if(questionNumbers.Count == 11)
-                {
-                    //break;
-                }
                 questionOrder.Content += " " + questionNumbers[i].ToString();
             }
+        }
+
+        private void RestartGame(object sender, RoutedEventArgs e)
+        {
+
+            ans1.Visibility = Visibility.Visible;
+            ans2.Visibility = Visibility.Visible;
+            ans3.Visibility = Visibility.Visible;
+            ans4.Visibility = Visibility.Visible;
+            txtQuestion.Visibility = Visibility.Visible;
+            qImage.Visibility = Visibility.Visible;
+            Canvas.SetLeft(scoreText, 0);
+            Canvas.SetTop(scoreText, 0);
+            TryAgainQuiz.Visibility = Visibility.Hidden;
+
+            // restart game function will load all of the default values for this game
+            score = 0; // set score to 0
+            qNum = -1; // set qnum to -1
+            i = 0; // set i to 0
+            scoreText.Content = "Answered Correctly " + score + "/" + questionNumbers.Count;
+            StartGame(); // run the start game function
         }
     }
 }
