@@ -7,16 +7,43 @@
              mc:Ignorable="d" 
              d:DesignHeight="611" d:DesignWidth="1062" Background="#FF1BEBEF">
 
+    <UserControl.Resources>
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+        <Style x:Key="MyButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" 
+                        BorderThickness="2"
+                        Padding="4,2" 
+                        BorderBrush="DarkGray" 
+                        CornerRadius="3" 
+                        Background="#003366">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="black" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
     <Canvas Name="myCanvas" Background="#003366">
-        <Label Name="scoreText" FontSize="36" Height="74" Width="212" HorizontalAlignment="Left" VerticalAlignment="Center">Score: 0/10</Label>
-        <Label Name="questionOrder" FontSize="18" Canvas.Left="420" HorizontalAlignment="Left" VerticalAlignment="Center">Questions</Label>
-        <Image Name="qImage" Source="cedar 2.png" Stretch="Uniform" Height="286" Width="725" Canvas.Left="104" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Name="txtQuestion" TextAlignment="Center" Padding="3" FontSize="20" Width="722" TextWrapping="Wrap" Canvas.Left="104" Canvas.Top="330" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Label Name="scoreText" FontSize="28" Height="74" Width="355" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF33D6FF">Score: 0/10</Label>
+        <Label Name="questionOrder" FontSize="18" Canvas.Left="420" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden">Questions</Label>
+        <Image Name="qImage" Source="flag.jpg" Stretch="Uniform" Height="190" Width="292" Canvas.Left="322" Canvas.Top="95" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Name="txtQuestion" TextAlignment="Center" Padding="3" FontSize="20" Width="722" TextWrapping="Wrap" Canvas.Left="104" Canvas.Top="330" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF33D6FF">
             Hi welcome to this quiz game and we will be showing lots of different questions and you will click on the answer buttons to answer them.
         </TextBlock>
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans1" Width="350" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="434" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans2" Width="350" Height="50" Content="Answer 2" Tag="0" Canvas.Left="104" Canvas.Top="509" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans3" Width="350" Height="50" Content="Answer 3" Tag="0" Canvas.Left="476" Canvas.Top="434" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans4" Width="350" Height="50" Content="Answer 4" Tag="0" Canvas.Left="476" Canvas.Top="509" />
+        <Button Foreground="#33d6ff" FontSize="18" Click="checkAnswer" Name="ans1" Width="350" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="434" Style="{StaticResource MyButtonStyle}" BorderBrush="black" BorderThickness="10,10,10,10" />
+        <Button Foreground="#33d6ff" FontSize="18" Click="checkAnswer" Name="ans2" Width="350" Height="50" Content="Answer 2" Tag="0" Canvas.Left="104" Canvas.Top="509" Style="{StaticResource MyButtonStyle}"/>
+        <Button Foreground="#33d6ff" FontSize="18" Click="checkAnswer" Name="ans3" Width="350" Height="50" Content="Answer 3" Tag="0" Canvas.Left="476" Canvas.Top="434" Style="{StaticResource MyButtonStyle}"/>
+        <Button Foreground="#33d6ff" FontSize="18" Click="checkAnswer" Name="ans4" Width="350" Height="50" Content="Answer 4" Tag="0" Canvas.Left="476" Canvas.Top="509" Style="{StaticResource MyButtonStyle}"/>
     </Canvas>
 </UserControl>

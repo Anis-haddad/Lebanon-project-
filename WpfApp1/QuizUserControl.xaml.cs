@@ -41,6 +41,7 @@ namespace WpfApp1
             // this is the check answer event, this event is linked to each button on the canvas
             // when either of the buttons will be pressed we will run this event
             Button senderButton = sender as Button; // first check which button sent this event and link it to a local button inside of this event
+            //ans1.Background = new SolidColorBrush(Colors.Red);
             // in the if statement below we will check if the button clicked on has a 1 tag inside of it, if it does then we will add 1 to the score
             if (senderButton.Tag.ToString() == "1")
             {
@@ -49,7 +50,7 @@ namespace WpfApp1
             // if the qnum is less than 0 then we will reset the qnum integer to 0
             if (qNum < 0)
             {
-                qNum = 0;
+                qNum = 11;
             }
             else
             {
@@ -103,10 +104,10 @@ namespace WpfApp1
                     ans2.Tag = "1"; // here we tell the program which one of the answers above is the right answer by adding the 1 inside of the tag for the button. 
                     // in this example we adding 1 inside of ans2 or button 2
                     // so when the button is clicked the game will know which is the correct answer and it add 1 to the score for the game
-                    //qImage.Source = new BitmapImage(new Uri("Images/Quiz/Question1.png")); // here we will load the 1st image inside of the qimage 
-                    //string abc = "Images/Quiz/Question1.png";
+                    //qImage.Source = new BitmapImage(new Uri("cedar 2.png")); // here we will load the 1st image inside of the qimage 
+                    //string abc = "/Images/Quiz/Question1.png";
                     //BitmapImage bitmap = new BitmapImage(new Uri("cedar 2.png"));
-                    //qImage.Source = new Uri(abc);
+                    //qImage.Source = new BitmapImage(new Uri(abc));
                     break; // when this condition is met the program will break the switch statement here and wait for the next one
                            // rest of the condition will follow the same principle as this one
                 case 2:
@@ -205,6 +206,10 @@ namespace WpfApp1
             // run a for loop to add the value which will display the randomised list to the display so we can see how the list has been ramdomised
             for (int i = 0; i < questionNumbers.Count; i++)
             {
+                if(questionNumbers.Count == 11)
+                {
+                    //break;
+                }
                 questionOrder.Content += " " + questionNumbers[i].ToString();
             }
         }
