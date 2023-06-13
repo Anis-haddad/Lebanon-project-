@@ -95,96 +95,99 @@ namespace WpfApp1
             switch (i)
             {
                 case 1:
-                    txtQuestion.Text = "Question 1"; // this the question for the quiz
-                    ans1.Content = "Answer 1"; // each of the buttons can have their own answers in this game
-                    ans2.Content = "Answer 2 Correct";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
+                    txtQuestion.Text = "What is the population of Lebanon?"; // this the question for the quiz
+                    ans1.Content = "2 millions"; // each of the buttons can have their own answers in this game
+                    ans2.Content = "4 millions";
+                    ans3.Content = "5 millions";
+                    ans4.Content = "8 millions";
                     ans2.Tag = "1"; // here we tell the program which one of the answers above is the right answer by adding the 1 inside of the tag for the button. 
                     // in this example we adding 1 inside of ans2 or button 2
                     // so when the button is clicked the game will know which is the correct answer and it add 1 to the score for the game
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg")); // here we will load the 1st image inside of the qimage 
+                    //qImage.Source = new BitmapImage(new Uri("Images/Quiz/Question1.png")); // here we will load the 1st image inside of the qimage 
+                    //string abc = "Images/Quiz/Question1.png";
+                    //BitmapImage bitmap = new BitmapImage(new Uri("cedar 2.png"));
+                    //qImage.Source = new Uri(abc);
                     break; // when this condition is met the program will break the switch statement here and wait for the next one
                            // rest of the condition will follow the same principle as this one
                 case 2:
-                    txtQuestion.Text = "Question 2";
-                    ans1.Content = "Answer 1 Correct";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
-                    ans1.Tag = "1";
-                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
-                    break;
-                case 3:
-                    txtQuestion.Text = "Question 3";
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3 Correct";
-                    ans4.Content = "Answer 4";
+                    txtQuestion.Text = "What is the area of Lebanon?";
+                    ans1.Content = "11000 km2";
+                    ans2.Content = "7060 km2";
+                    ans3.Content = "10452 km2";
+                    ans4.Content = "17230 km2";
                     ans3.Tag = "1";
                     //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
                     break;
+                case 3:
+                    txtQuestion.Text = "Lebanon has access to the: ";
+                    ans1.Content = "Mediterranean Sea";
+                    ans2.Content = "Black sea";
+                    ans3.Content = "Red sea";
+                    ans4.Content = "Baltic sea";
+                    ans1.Tag = "1";
+                    //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
+                    break;
                 case 4:
-                    txtQuestion.Text = "Question 4";
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4 Correct";
-                    ans4.Tag = "1";
+                    txtQuestion.Text = "How many religions The country recognizes:";
+                    ans1.Content = "18 religious communities";
+                    ans2.Content = "2 religious communities";
+                    ans3.Content = "10 religious communities";
+                    ans4.Content = "6 religious communities";
+                    ans1.Tag = "1";
                     //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
                     break;
                 case 5:
-                    txtQuestion.Text = "Question 5";
-                    ans1.Content = "Answer 1 Correct";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
+                    txtQuestion.Text = "What is the capital city of Lebanon?";
+                    ans1.Content = "Beirut";
+                    ans2.Content = "Tripoli";
+                    ans3.Content = "Harrissa";
+                    ans4.Content = "Byblos";
                     ans1.Tag = "1";
                     //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
                     break;
                 case 6:
-                    txtQuestion.Text = "Question 6";
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3 Correct";
-                    ans4.Content = "Answer 4";
-                    ans3.Tag = "1";
+                    txtQuestion.Text = "how much is the highest mountain in Lebanon?";
+                    ans1.Content = "3,088 meters";
+                    ans2.Content = "1502 meters";
+                    ans3.Content = "6900 meters";
+                    ans4.Content = "4532 meters";
+                    ans1.Tag = "1";
                     //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
                     break;
                 case 7:
-                    txtQuestion.Text = "Question 7";
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2 Correct";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
-                    ans2.Tag = "1";
+                    txtQuestion.Text = "What is the type of authority in Lebanon";
+                    ans1.Content = "Parliamentary democratic republic";
+                    ans2.Content = "Royal";
+                    ans3.Content = "Dictatorship";
+                    ans4.Content = "Federalism";
+                    ans1.Tag = "1";
                     //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
                     break;
                 case 8:
-                    txtQuestion.Text = "Question 8";
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4 Correct";
-                    ans4.Tag = "1";
+                    txtQuestion.Text = "In what year Lebanon got its independence ";
+                    ans1.Content = "1943";
+                    ans2.Content = "1990";
+                    ans3.Content = "2000";
+                    ans4.Content = "1955";
+                    ans1.Tag = "1";
                     //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
                     break;
                 case 9:
-                    txtQuestion.Text = "Question 9";
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3 Correct";
-                    ans4.Content = "Answer 4";
-                    ans3.Tag = "1";
+                    txtQuestion.Text = "What is main language in lebanon";
+                    ans1.Content = "Arabic";
+                    ans2.Content = "Aramic";
+                    ans3.Content = "Persian";
+                    ans4.Content = "Hebrew";
+                    ans1.Tag = "1";
                     //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
                     break;
                 case 10:
-                    txtQuestion.Text = "Question 10";
-                    ans1.Content = "Answer 1 Correct";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
-                    ans1.Tag = "1";
+                    txtQuestion.Text = "When was the city of Byblos founded?";
+                    ans1.Content = "1500 years ago";
+                    ans2.Content = "2300 years ago";
+                    ans3.Content = "3800 years ago";
+                    ans4.Content = "5000 years ago";
+                    ans4.Tag = "1";
                     //qImage.Source = new BitmapImage(new Uri("asset/cedar.jpg"));
                     break;
             }
