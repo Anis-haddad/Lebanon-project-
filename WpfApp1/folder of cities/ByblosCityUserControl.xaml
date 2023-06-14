@@ -7,9 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="551" d:DesignWidth="1062" Background="#003366">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/byb1.jpg" Stretch="Fill"/>
-        <Image HorizontalAlignment="Left" Height="296" Margin="341,10,0,0" VerticalAlignment="Top" Width="341" Source="/byb2.jpg" Stretch="Fill"/>
-        <Image HorizontalAlignment="Left" Height="296" Margin="682,10,0,0" VerticalAlignment="Top" Width="341" Source="/byb3.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb1.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="296" Margin="341,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb2.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="296" Margin="682,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb3.jpg" Stretch="Fill"/>
         <RichTextBox Margin="0,328,0,0"  Background="#003366" BorderBrush="#003366">
             <FlowDocument>
                 <Paragraph>

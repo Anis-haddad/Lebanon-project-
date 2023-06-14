@@ -9,9 +9,9 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="269" Margin="10,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/beirut.png" Stretch="UniformToFill"/>
         <Image HorizontalAlignment="Left" Height="269" Margin="356,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/beirut street.png" Stretch="Fill"/>
-        <Image HorizontalAlignment="Left" Height="269" Margin="689,10,0,0" VerticalAlignment="Top" Width="341" Source="/beirut1.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="269" Margin="689,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/beirut1.jpg" Stretch="Fill"/>
         <local:ByblosCityUserControl HorizontalAlignment="Left" Margin="1437,292,0,0" VerticalAlignment="Top"/>
-        <RichTextBox Margin="32,376,46,60" Background="#003366" BorderBrush="#003366">
+        <RichTextBox Margin="22,306,56,0" Background="#003366" BorderBrush="#003366">
             <FlowDocument>
                 <Paragraph>
                     <Run FontSize="24" Foreground="#80bfff" Text="Beirut, Lebanon's capital, is a historic city with a blend of cultures. 
