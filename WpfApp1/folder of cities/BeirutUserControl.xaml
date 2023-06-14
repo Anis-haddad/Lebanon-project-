@@ -7,10 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="611" d:DesignWidth="1062" Background="#003366">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="254" Margin="123,90,0,0" VerticalAlignment="Top" Width="203" Source="/folder of cities/beirut.png"/>
-        <Image HorizontalAlignment="Left" Height="301" Margin="531,66,0,0" VerticalAlignment="Top" Width="399" Source="/folder of cities/beirut street.png"/>
-        <Button Content="Go back to visit more cities" HorizontalAlignment="Left" Margin="306,440,0,0" VerticalAlignment="Top"/>
-        <Label Content="Beirut" HorizontalAlignment="Left" Margin="346,26,0,0" VerticalAlignment="Top" Height="83" Width="228" FontSize="48"/>
+        <Image HorizontalAlignment="Left" Height="269" Margin="10,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/beirut.png" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="269" Margin="356,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/beirut street.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="269" Margin="689,10,0,0" VerticalAlignment="Top" Width="341" Source="/beirut1.jpg" Stretch="Fill"/>
+        <local:ByblosCityUserControl HorizontalAlignment="Left" Margin="1437,292,0,0" VerticalAlignment="Top"/>
+        <RichTextBox Margin="32,376,46,60" Background="#003366" BorderBrush="#003366">
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontSize="24" Foreground="#80bfff" Text="Beirut, Lebanon's capital, is a historic city with a blend of cultures. 
+It is one of the oldest inhabited cities globally, showcasing diverse architectural styles. Despite periods of conflict, Beirut has rebuilt into a thriving cultural hub with a vibrant nightlife and renowned culinary scene. It is also home to the prestigious American University of Beirut and boasts a dynamic arts and music scene." Background="#003366" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
     </Grid>
 </UserControl>

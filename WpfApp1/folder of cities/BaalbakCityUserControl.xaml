@@ -7,6 +7,16 @@
              mc:Ignorable="d" 
              d:DesignHeight="551" d:DesignWidth="1062" Background="#003366">
     <Grid>
-            
+        <Image HorizontalAlignment="Left" Height="296" Margin="341,10,0,0" VerticalAlignment="Top" Width="341" Source="/baa1.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/baa2.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="296" Margin="682,10,0,0" VerticalAlignment="Top" Width="341" Source="/baa3.jpg" Stretch="Fill"/>
+        <RichTextBox Margin="0,331,10,0"  Background="#003366" BorderBrush="#003366" >
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontSize="24" Foreground="#80bfff" Text="Baalbek, situated in Lebanon's Beqaa Valley, is an ancient city renowned for its remarkable Roman ruins. The city is home to the monumental Temple of Baalbek, one of the largest Roman temple complexes in the world. Its towering columns and intricate stone carvings showcase the impressive craftsmanship of the Roman Empire. Baalbek's historical significance also stems from its previous occupation by the Greeks and Phoenicians. The ruins continue to fascinate visitors, offering a glimpse into the grandeur of the ancient world"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
     </Grid>
 </UserControl>
