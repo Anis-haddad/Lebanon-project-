@@ -4,10 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1"
+             xmlns:folder_of_cities="clr-namespace:WpfApp1.folder_of_cities"
              mc:Ignorable="d" 
              d:DesignHeight="611" d:DesignWidth="1062" Background="#FFCE00FF">
     <Grid Background="#003366">
-        <Image HorizontalAlignment="Left" Visibility="Visible"  Stretch="fill" Source="/map of cities.jpg" Height="591" VerticalAlignment="Center" Width="525"/>
+
+        <Image x:Name="MapOfLebanon" HorizontalAlignment="Left" Visibility="Visible"  Stretch="fill" Source="/RedLebanon2.png" Height="591" VerticalAlignment="Center" Width="525"/>
         <RichTextBox Margin="531,108,16,382" Background="#80bfff" FontSize="17" FontWeight="ExtraBold">
             <FlowDocument>
                 <Paragraph>
@@ -16,7 +18,19 @@ Area of Lebanon is 10452 km2,it is one of the smallest coutnry in middle east"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
+        <Ellipse x:Name="ByblosMapElipse" HorizontalAlignment="Left" Height="28" Margin="182,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="ByblosMapElipse_MouseEnter" MouseLeave="ByblosMapElipse_MouseLeave" MouseDown="ByblosMapElipse_MouseDown"/>
+        <Ellipse x:Name="BeirutMapElipse" HorizontalAlignment="Left" Height="28" Margin="133,282,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="BeirutMapElipse_MouseEnter" MouseLeave="BeirutMapElipse_MouseLeave" MouseDown="BeirutMapElipse_MouseDown"/>
+        <Ellipse x:Name="BaalbakMapElipse" HorizontalAlignment="Left" Height="28" Margin="392,238,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.167,0.033" MouseEnter="BaalbakMapElipse_MouseEnter" MouseLeave="BaalbakMapElipse_MouseLeave" MouseDown="BaalbakMapElipse_MouseDown"/>
+        <Ellipse x:Name="HarissaMapElipse" HorizontalAlignment="Left" Height="28" Margin="255,284,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="HarissaMapElipse_MouseEnter" MouseLeave="HarissaMapElipse_MouseLeave" MouseDown="HarissaMapElipse_MouseDown"/>
+        <Ellipse x:Name="FarayaMapElipse" HorizontalAlignment="Left" Height="28" Margin="227,366,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="FarayaMapElipse_MouseEnter" MouseLeave="FarayaMapElipse_MouseLeave" MouseDown="FarayaMapElipse_MouseDown"/>
 
+        <folder_of_cities:BeirutUserControl x:Name="BeirutisACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
+        <folder_of_cities:ManuMainCitiesUserControl x:Name="MenuMainCities" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
+        <folder_of_cities:HarrissaCityUserControl x:Name="HarrissaCityIsACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
+        <folder_of_cities:BaalbakCityUserControl x:Name="BaalbakCityIsaCity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
+        <folder_of_cities:ByblosCityUserControl x:Name="ByblosCityIsACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
+        <folder_of_cities:FarayaCityUserControl x:Name="FarayaCityIsACity" Background="#003366" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
+        <Button x:Name="GoBackFromMainCities" Content="Go back" HorizontalAlignment="Center" Margin="0,556,0,0" VerticalAlignment="Top" Width="112" MouseDown="GoBackFromMainCities_MouseDown" Click="GoBackFromMainCities_Click" Height="31" Visibility="Hidden"/>
 
 
 
