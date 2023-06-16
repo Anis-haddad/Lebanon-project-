@@ -8,10 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="baa1.jpg" />
+    <None Remove="beirut street.png" />
+    <None Remove="beirut.png" />
+    <None Remove="beirut1.jpg" />
+    <None Remove="byb1.jpg" />
     <None Remove="cedar 2.png" />
     <None Remove="cedar 3.jpg" />
     <None Remove="cedar.jpg" />
     <None Remove="cedar.png" />
+    <None Remove="Faraya2.jpg" />
     <None Remove="flag.jpg" />
     <None Remove="folder of cities\baa1.jpg" />
     <None Remove="folder of cities\baa2.jpg" />
@@ -29,6 +35,7 @@
     <None Remove="folder of cities\harissa4.jpg" />
     <None Remove="folder of cities\harrisa1.jpg" />
     <None Remove="folder of cities\harrisa2.jpg" />
+    <None Remove="harrisa2.jpg" />
     <None Remove="map of cities.jpg" />
     <None Remove="Question1.png" />
     <None Remove="Question10.jpg" />
@@ -44,10 +51,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="baa1.jpg" />
+    <Resource Include="beirut street.png" />
+    <Resource Include="beirut.png" />
+    <Resource Include="beirut1.jpg" />
+    <Resource Include="byb1.jpg" />
     <Resource Include="cedar 2.png" />
     <Resource Include="cedar 3.jpg" />
     <Resource Include="cedar.jpg" />
     <Resource Include="cedar.png" />
+    <Resource Include="Faraya2.jpg" />
     <Resource Include="flag.jpg" />
     <Resource Include="folder of cities\baa1.jpg" />
     <Resource Include="folder of cities\baa2.jpg" />
@@ -65,6 +78,7 @@
     <Resource Include="folder of cities\harissa4.jpg" />
     <Resource Include="folder of cities\harrisa1.jpg" />
     <Resource Include="folder of cities\harrisa2.jpg" />
+    <Resource Include="harrisa2.jpg" />
     <Resource Include="map of cities.jpg" />
     <Resource Include="Question1.png" />
     <Resource Include="Question10.jpg" />

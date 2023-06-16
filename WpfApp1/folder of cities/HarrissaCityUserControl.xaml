@@ -9,7 +9,7 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/harrisa1.jpg" Stretch="Fill"/>
         <Image HorizontalAlignment="Left" Height="296" Margin="341,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/harrisa2.jpg" Stretch="Fill"/>
-        <RichTextBox Margin="10,354,59,31"  Background="#003366" BorderBrush="#003366">
+        <RichTextBox Margin="10,329,59,56"  Background="#003366" BorderBrush="#003366">
             <FlowDocument>
                 <Paragraph>
                     <Run FontSize="24" Foreground="#80bfff" Text="Harissa is a picturesque city located in Lebanon, renowned for its iconic Our Lady of Lebanon statue. Perched atop a hill, the statue offers breathtaking panoramic views of the surrounding landscape and the Mediterranean Sea. The city is a popular pilgrimage site for both locals and tourists, attracting visitors with its serene atmosphere and religious significance. In addition to its spiritual allure, Harissa also offers charming streets lined with shops and restaurants, allowing visitors to indulge in Lebanese cuisine and shop for unique souvenirs."/>

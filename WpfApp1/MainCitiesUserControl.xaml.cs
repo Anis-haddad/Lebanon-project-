@@ -31,6 +31,8 @@ namespace WpfApp1
             Grid.SetZIndex(FarayaCityIsACity, int.MinValue);
             Grid.SetZIndex(ByblosCityIsACity, int.MinValue);
             Grid.SetZIndex(BaalbakCityIsaCity, int.MinValue);
+            Grid.SetZIndex(beirutImageClick, int.MinValue);
+            Grid.SetZIndex(BaalbakImageClick, int.MinValue);
 
             BeirutisACity.Visibility = Visibility.Collapsed;
             MenuMainCities.Visibility = Visibility.Collapsed;
@@ -83,6 +85,8 @@ namespace WpfApp1
             Grid.SetZIndex(FarayaCityIsACity, int.MinValue);
             Grid.SetZIndex(ByblosCityIsACity, int.MinValue);
             Grid.SetZIndex(BaalbakCityIsaCity, int.MinValue);
+            Grid.SetZIndex(harrissaImageClick, int.MinValue);
+
 
             BeirutisACity.Visibility = Visibility.Collapsed;
             MenuMainCities.Visibility = Visibility.Collapsed;
@@ -117,6 +121,7 @@ namespace WpfApp1
             Grid.SetZIndex(FarayaCityIsACity, int.MaxValue);
             Grid.SetZIndex(ByblosCityIsACity, int.MinValue);
             Grid.SetZIndex(BaalbakCityIsaCity, int.MinValue);
+            Grid.SetZIndex(FarayaImageClick, int.MinValue);
 
             BeirutisACity.Visibility = Visibility.Collapsed;
             MenuMainCities.Visibility = Visibility.Collapsed;
@@ -141,6 +146,104 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Visible;
+        }
+
+        private void FarayaCityIsACity_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Grid.SetZIndex(BeirutisACity, int.MaxValue);
+            Grid.SetZIndex(MenuMainCities, int.MinValue);
+            Grid.SetZIndex(HarrissaCityIsACity, int.MinValue);
+            Grid.SetZIndex(FarayaCityIsACity, int.MinValue);
+            Grid.SetZIndex(ByblosCityIsACity, int.MinValue);
+            Grid.SetZIndex(BaalbakCityIsaCity, int.MinValue);
+
+            BeirutisACity.Visibility = Visibility.Visible;
+            MenuMainCities.Visibility = Visibility.Collapsed;
+            HarrissaCityIsACity.Visibility = Visibility.Collapsed;
+            FarayaCityIsACity.Visibility = Visibility.Collapsed;
+            ByblosCityIsACity.Visibility = Visibility.Collapsed;
+            BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+        }
+
+        private void Image_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            HarrissaCityIsACity.Visibility=Visibility.Visible;
+            Grid.SetZIndex(BeirutisACity, int.MinValue);
+            Grid.SetZIndex(MenuMainCities, int.MinValue);
+            Grid.SetZIndex(HarrissaCityIsACity, int.MaxValue);
+            Grid.SetZIndex(FarayaCityIsACity, int.MinValue);
+            Grid.SetZIndex(ByblosCityIsACity, int.MinValue);
+            Grid.SetZIndex(BaalbakCityIsaCity, int.MinValue);
+            Grid.SetZIndex(harrissaImageClick, int.MinValue);
+
+
+            BeirutisACity.Visibility = Visibility.Collapsed;
+            MenuMainCities.Visibility = Visibility.Collapsed;
+            HarrissaCityIsACity.Visibility = Visibility.Visible;
+            FarayaCityIsACity.Visibility = Visibility.Collapsed;
+            ByblosCityIsACity.Visibility = Visibility.Collapsed;
+            BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+        }
+
+        private void FarayaImageClick_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+             FarayaCityIsACity.Visibility= Visibility.Visible;
+            Grid.SetZIndex(BeirutisACity, int.MinValue);
+            Grid.SetZIndex(MenuMainCities, int.MinValue);
+            Grid.SetZIndex(HarrissaCityIsACity, int.MinValue);
+            Grid.SetZIndex(FarayaCityIsACity, int.MaxValue);
+            Grid.SetZIndex(ByblosCityIsACity, int.MinValue);
+            Grid.SetZIndex(BaalbakCityIsaCity, int.MinValue);
+            Grid.SetZIndex(FarayaImageClick, int.MinValue);
+
+            BeirutisACity.Visibility = Visibility.Collapsed;
+            MenuMainCities.Visibility = Visibility.Collapsed;
+            HarrissaCityIsACity.Visibility = Visibility.Collapsed;
+            FarayaCityIsACity.Visibility = Visibility.Visible;
+            ByblosCityIsACity.Visibility = Visibility.Collapsed;
+            BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+        }
+
+        private void ByblosImageClick_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            BeirutisACity.Visibility=Visibility.Collapsed;
+            Grid.SetZIndex(BeirutisACity, int.MinValue);
+            Grid.SetZIndex(MenuMainCities, int.MinValue);
+            Grid.SetZIndex(HarrissaCityIsACity, int.MinValue);
+            Grid.SetZIndex(FarayaCityIsACity, int.MinValue);
+            Grid.SetZIndex(ByblosCityIsACity, int.MaxValue);
+            Grid.SetZIndex(BaalbakCityIsaCity, int.MinValue);
+
+            BeirutisACity.Visibility = Visibility.Collapsed;
+            MenuMainCities.Visibility = Visibility.Collapsed;
+            HarrissaCityIsACity.Visibility = Visibility.Collapsed;
+            FarayaCityIsACity.Visibility = Visibility.Collapsed;
+            ByblosCityIsACity.Visibility = Visibility.Visible;
+            BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+        }
+
+        private void BaalbakImageClick_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            BeirutisACity.Visibility= Visibility.Collapsed;
+            Grid.SetZIndex(BeirutisACity, int.MinValue);
+            Grid.SetZIndex(MenuMainCities, int.MinValue);
+            Grid.SetZIndex(HarrissaCityIsACity, int.MinValue);
+            Grid.SetZIndex(FarayaCityIsACity, int.MinValue);
+            Grid.SetZIndex(ByblosCityIsACity, int.MinValue);
+            Grid.SetZIndex(BaalbakCityIsaCity, int.MaxValue);
+
+            BeirutisACity.Visibility = Visibility.Collapsed;
+            MenuMainCities.Visibility = Visibility.Collapsed;
+            HarrissaCityIsACity.Visibility = Visibility.Collapsed;
+            FarayaCityIsACity.Visibility = Visibility.Collapsed;
+            ByblosCityIsACity.Visibility = Visibility.Collapsed;
+            BaalbakCityIsaCity.Visibility = Visibility.Visible;
+
         }
     }
 }

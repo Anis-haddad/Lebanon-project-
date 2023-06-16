@@ -11,13 +11,18 @@
             <RowDefinition Height="221*"/>
             <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
-        <RichTextBox Margin="134,86,90,179">
+        <RichTextBox Margin="134,91,90,43" Background="#003366" BorderBrush="#003366">
             <FlowDocument>
                 <Paragraph>
-                    <Run Text="1. Lebanon is one of the oldest inhabited countries in the world, with evidence of human presence dating back over 7,000 years.
-                                             2. Lebanon is known as the Land of the Cedars due to its iconic cedar trees, which are featured on the country's flag.
-                                                                3. Beirut, the capital of Lebanon, was once known as the Paris of the Middle East for its vibrant cultural scene and cosmopolitan atmosphere.
-                                                               4. Lebanon is home to a diverse population, consisting of various religious and ethnic groups, including Maronite Christians, Sunni and Shia Muslims, and Druze.
+                    <Run FontSize="18" Foreground="#80bfff" Text="1. Lebanon is one of the oldest inhabited countries in the world, with evidence of human presence dating back over 7,000 years.
+                                             
+                         
+                         
+                         2. Lebanon is known as the Land of the Cedars due to its iconic cedar trees, which are featured on the country's flag.
+                                                                
+                       
+                                                         3. Beirut, the capital of Lebanon, was once known as the Paris of the Middle East for its vibrant cultural scene and cosmopolitan atmosphere.
+                                                                                                                    4. Lebanon is home to a diverse population, consisting of various religious and ethnic groups, including Maronite Christians, Sunni and Shia Muslims, and Druze.
 
                                                                                                                                                                    
                                                                 
@@ -26,7 +31,7 @@
                                                   
                                                                                                              
                                                                                                                  6. Byblos, an ancient city in Lebanon, is one of the oldest continuously inhabited cities in the world and is recognized as a UNESCO World Heritage Site.
-                         7. Lebanon has a rich history of winemaking, with vineyards dating back thousands of years. The country produces a wide range of wines, especially in the Bekaa Valley region.
+                                                                                            7. Lebanon has a rich history of winemaking, with vineyards dating back thousands of years. The country produces a wide range of wines, especially in the Bekaa Valley region.
 
                                                                      
                                                         

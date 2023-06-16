@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:WpfApp1.folder_of_cities"
              mc:Ignorable="d" 
              d:DesignHeight="611" d:DesignWidth="1062" Background="#003366">
-    <Grid>
-        <!--<Button HorizontalAlignment="Left" Margin="107,54,0,0" VerticalAlignment="Top" Width="132" Height="164" Background="#AB92BF" RenderTransformOrigin="0.536,0.058" Click="BeirutButton">
+    <!--<Grid>
+        <Button HorizontalAlignment="Left" Margin="107,54,0,0" VerticalAlignment="Top" Width="132" Height="164" Background="#AB92BF" RenderTransformOrigin="0.536,0.058" Click="BeirutButton">
             <Image Source="beirut.png" Height="138"/>
         </Button>
         <Button Content="Byblos" HorizontalAlignment="Left" Margin="556,108,0,0" VerticalAlignment="Top" Width="110"/>
@@ -24,7 +24,7 @@
         </Button>
         <Button Content="Faraya" HorizontalAlignment="Left" Margin="374,217,0,0" VerticalAlignment="Top" Width="122"/>
         <Button Content="go back to main page" HorizontalAlignment="Left" Margin="118,356,0,0" VerticalAlignment="Top" Width="151"/>
-        <Label Content="Beirut" HorizontalAlignment="Left" Margin="152,218,0,0" VerticalAlignment="Top"/>-->
+        <Label Content="Beirut" HorizontalAlignment="Left" Margin="152,218,0,0" VerticalAlignment="Top"/>
 
-    </Grid>
+    </Grid>-->
 </UserControl>
