@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         
         
-        Title="MainWindow" Height="720" Width="1280">
+        Title="MainWindow" Height="720" Width="1280" MinHeight="720" MinWidth="1280">
 
     <Window.Resources>
         <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
@@ -19,11 +19,11 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Border x:Name="border" 
-                        BorderThickness="0"
-                        Padding="4,2" 
-                        BorderBrush="DarkGray" 
-                        CornerRadius="3" 
-                        Background="{TemplateBinding Background}">
+                            BorderThickness="0"
+                            Padding="4,2" 
+                            BorderBrush="DarkGray" 
+                            CornerRadius="3" 
+                            Background="{TemplateBinding Background}">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
                         <ControlTemplate.Triggers>
@@ -61,15 +61,25 @@
         </Style>
     </Window.Resources>
 
-    <Grid>
-        <Image   HorizontalAlignment="Left" Height="214" Margin="450,0,0,0" VerticalAlignment="Center" Width="276" Source="/cedar 3.jpg" Stretch="Fill"/>
-        <DockPanel LastChildFill="False">
-            <DockPanel LastChildFill="False" Background="#00264d" DockPanel.Dock="Left" Width="218" HorizontalAlignment="Center"/>
-            <DockPanel LastChildFill="False" DockPanel.Dock="Top" Height="100" Background="#00264d">
-                <Label Content="Welcome to Lebanon" Foreground="#33d6ff" FontWeight="ExtraBold" DockPanel.Dock="Top" Height="100" HorizontalAlignment="Center" FontSize="76" FontFamily="Traditional Arabic" FontStyle="Italic"/>
+    <Grid MinWidth="2">
+        <Image   HorizontalAlignment="Left" Height="214" Margin="450,180,0,0" VerticalAlignment="Top" Width="276" Source="/cedar 3.jpg" Stretch="Fill" Grid.Row="2"/>
+        <DockPanel LastChildFill="False" Grid.RowSpan="3">
+            <DockPanel LastChildFill="False" Background="Black" DockPanel.Dock="Left" Width="220" HorizontalAlignment="Center">
+                <DockPanel LastChildFill="False" Background="Black" Width="10" HorizontalAlignment="Center" DockPanel.Dock="Left">
 
+                </DockPanel>
+                <DockPanel LastChildFill="False" Background="Black" Height="110" Width="200" DockPanel.Dock="Top" HorizontalAlignment="Left">
+                    <Image Width="200" Source="/flag.jpg" Height="80"/>
+                </DockPanel>
+                <DockPanel LastChildFill="False" Background="#FF191818" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top" Height="440" DockPanel.Dock="Left">
+
+                </DockPanel>
             </DockPanel>
-            <DockPanel LastChildFill="False" DockPanel.Dock="Bottom" Height="100" Background="#00264d"/>
+            <DockPanel LastChildFill="False" DockPanel.Dock="Top" Height="100" Background="Black">
+                <!--<Label Content="Welcome to Lebanon" Foreground="#33d6ff" FontWeight="ExtraBold" DockPanel.Dock="Top" Height="100" HorizontalAlignment="Center" FontSize="76" FontFamily="Traditional Arabic" FontStyle="Italic"/>-->
+                <TextBlock Text="Welcome to Lebanon" Foreground="White" FontWeight="ExtraBold" DockPanel.Dock="Top" Height="100" HorizontalAlignment="Center" FontSize="76" FontFamily="Traditional Arabic" FontStyle="Italic" TextDecorations="Underline"/>
+            </DockPanel>
+            <!--<DockPanel LastChildFill="False" DockPanel.Dock="Bottom" Height="100" Background="#00264d"/>-->
 
         </DockPanel>
 
@@ -100,21 +110,81 @@
         <!--local:AboutUs Margin="221,100,0,0"/-->
 
 
-        <Button x:Name="MainCities2" Foreground="#33d6ff" FontSize="17" FontWeight="ExtraBold"  Content="Main Cities" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MainCitiesMenuButton"/>
-        <Button x:Name="MapOfLebanon" Foreground="#33d6ff" FontSize="17" FontWeight="ExtraBold" Content="Map of Lebanon" HorizontalAlignment="Left" Margin="0,210,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MapOfLebanon_Click"/>
-        <Button x:Name="ActivitiesToDo" Foreground="#33d6ff" FontSize="17" FontWeight="ExtraBold" Content="Activities to do" HorizontalAlignment="Left" Margin="0,310,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="ActivitiesToDoClick"/>
-        <Button x:Name="InterestingFacts" Foreground="#33d6ff" FontSize="17" FontWeight="ExtraBold"  Content="    Interesting facts " HorizontalAlignment="Left" Margin="0,410,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="InterestingFactsClick"/>
-        <Button x:Name="AboutUS" Content="About us" Foreground="#33d6ff" FontWeight="ExtraBold" FontSize="17" HorizontalAlignment="Left" Margin="0,510,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="AboutUSClick"/>
-        <Button x:Name="QUIZbutton" Content="Quiz"  Foreground="#33d6ff" FontWeight="ExtraBold" FontSize="17" HorizontalAlignment="Left" Margin="0,610,0,0" VerticalAlignment="Top" Height="70" Width="216" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="QuizButtonClick"/>
-        <Button x:Name="menu" Content="" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Height="70" Width="16" Style="{StaticResource MyButtonStyle2}" Focusable="False" Background="#80bfff" Click="menu_Click"/>
+        <Button x:Name="MainCities2" Foreground="White" FontSize="17" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" Height="70" Width="160" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MainCitiesMenuButton" Grid.Row="2">
+            <Button.Content>
+                <TextBlock Text=" Main Cities" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150"/>
+            </Button.Content>
+            <Button.Background>
+                <LinearGradientBrush x:Name="MainCitiesGradient" StartPoint="1,1" EndPoint="1,1" Opacity="0.2">
+                    <GradientStop Color="White" Offset="0.1" />
+                    <GradientStop Color="#FF191818" Offset="0.7" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MapOfLebanon" Foreground="White" FontSize="17" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="30,190,0,0" VerticalAlignment="Top" Height="70" Width="160" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="MapOfLebanon_Click" Grid.Row="2">
+            <Button.Content>
+                <TextBlock Text=" Map of Lebanon" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150"/>
+            </Button.Content>
+            <Button.Background>
+                <LinearGradientBrush x:Name="MapOfLebanonGradient" StartPoint="1,1" EndPoint="1,1" Opacity="0.2">
+                    <GradientStop Color="White" Offset="0.1" />
+                    <GradientStop Color="#FF191818" Offset="0.7" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ActivitiesToDo" Foreground="White" FontSize="17" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="30,260,0,0" VerticalAlignment="Top" Height="70" Width="160" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="ActivitiesToDoClick" Grid.Row="2">
+            <Button.Content>
+                <TextBlock Text=" Activities to do" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150"/>
+            </Button.Content>
+            <Button.Background>
+                <LinearGradientBrush x:Name="ActivitiesToDoGradient" StartPoint="1,1" EndPoint="1,1" Opacity="0.2">
+                    <GradientStop Color="White" Offset="0.1" />
+                    <GradientStop Color="#FF191818" Offset="0.7" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="InterestingFacts" Foreground="White" FontSize="17" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="30,330,0,0" VerticalAlignment="Top" Height="70" Width="160" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="InterestingFactsClick" Grid.Row="2">
+            <Button.Content>
+                <TextBlock Text=" Interesting facts" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150"/>
+            </Button.Content>
+            <Button.Background>
+                <LinearGradientBrush x:Name="InterestingFactsGradient" StartPoint="1,1" EndPoint="1,1" Opacity="0.2">
+                    <GradientStop Color="White" Offset="0.1" />
+                    <GradientStop Color="#FF191818" Offset="0.7" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="AboutUS" Foreground="White" FontWeight="ExtraBold" FontSize="17" HorizontalAlignment="Left" Margin="30,400,0,0" VerticalAlignment="Top" Height="70" Width="160" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="AboutUSClick" Grid.Row="2">
+            <Button.Content>
+                <TextBlock Text=" About us" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150"/>
+            </Button.Content>
+            <Button.Background>
+                <LinearGradientBrush x:Name="AboutUsGradient" StartPoint="1,1" EndPoint="1,1" Opacity="0.2">
+                    <GradientStop Color="White" Offset="0.1" />
+                    <GradientStop Color="#FF191818" Offset="0.7" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="QUIZbutton" Foreground="White" FontWeight="ExtraBold" FontSize="17" HorizontalAlignment="Left" Margin="30,470,0,0" VerticalAlignment="Top" Height="70" Width="160" Style="{StaticResource MyButtonStyle}" Focusable="False" Click="QuizButtonClick" Grid.Row="2">
+            <Button.Content>
+                <TextBlock Text=" Quiz" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150"/>
+            </Button.Content>
+            <Button.Background>
+                <LinearGradientBrush x:Name="QuizGradient" StartPoint="1,1" EndPoint="1,1" Opacity="0.2">
+                    <GradientStop Color="White" Offset="0.1" />
+                    <GradientStop Color="#FF191818" Offset="0.7" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="menu" Content="" HorizontalAlignment="Left" Margin="11,55,0,0" VerticalAlignment="Top" Height="70" Width="16" Style="{StaticResource MyButtonStyle2}" Focusable="False" Background="Gray" Click="menu_Click" Visibility="Hidden" Grid.Row="2"/>
 
-        <local:Menu x:Name="MenuUserControlMenu" Margin="218,93,0,0" Loaded="Menu_Loaded"/>
-        <local:AboutUs x:Name="AboutUsUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
-        <local:MainCitiesUserControl x:Name="MainCitiesUserControlMenu" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
-        <local:MapOfLebanonUserControl x:Name="MapOfLebanonUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
-        <local:ActivitiesToDoUserControl x:Name="ActivitiesToDoUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
-        <local:IntrestingFactsAboutLebanonUserControl x:Name="IntrestingFactAboutLebanonUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
-        <local:QuizUserControl x:Name="QuizUserControl" HorizontalAlignment="Left" Margin="218,93,0,0" VerticalAlignment="Top" Height="611" Width="1062"/>
+        <local:Menu x:Name="MenuUserControlMenu" Margin="220,100,0,0" Loaded="Menu_Loaded" Grid.Row="2"/>
+        <local:AboutUs x:Name="AboutUsUserControlMenu" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="594" Width="1050" Grid.Row="2"/>
+        <local:MainCitiesUserControl x:Name="MainCitiesUserControlMenu" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="594" Width="1050" Grid.Row="2"/>
+        <local:MapOfLebanonUserControl x:Name="MapOfLebanonUserControl" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="594" Width="1050" Grid.Row="2"/>
+        <local:ActivitiesToDoUserControl x:Name="ActivitiesToDoUserControl" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="594" Width="1050" Grid.Row="2"/>
+        <local:IntrestingFactsAboutLebanonUserControl x:Name="IntrestingFactAboutLebanonUserControl" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="594" Width="1050"/>
+        <local:QuizUserControl x:Name="QuizUserControl" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="594" Width="1050"/>
 
 
 

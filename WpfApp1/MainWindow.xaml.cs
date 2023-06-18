@@ -68,7 +68,10 @@ namespace WpfApp1
 
         private void MainCitiesMenuButton(object sender, RoutedEventArgs e)
         {
-            menu.Margin = MainCities2.Margin;
+            menu.Margin = new Thickness(menu.Margin.Left,MainCities2.Margin.Top,menu.Margin.Right,menu.Margin.Bottom);
+            restartGradient();
+            MainCitiesGradient.StartPoint = new Point(0, 1);
+
             Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
             Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MaxValue);
@@ -80,7 +83,10 @@ namespace WpfApp1
 
         private void MapOfLebanon_Click(object sender, RoutedEventArgs e)
         {
-            menu.Margin = MapOfLebanon.Margin;
+            //menu.Margin = MapOfLebanon.Margin;
+            menu.Margin = new Thickness(menu.Margin.Left, MapOfLebanon.Margin.Top, menu.Margin.Right, menu.Margin.Bottom);
+            restartGradient();
+            MapOfLebanonGradient.StartPoint = new Point(0, 1);
             Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
             Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
@@ -92,7 +98,10 @@ namespace WpfApp1
 
         private void ActivitiesToDoClick(object sender, RoutedEventArgs e)
         {
-            menu.Margin = ActivitiesToDo.Margin;
+            //menu.Margin = ActivitiesToDo.Margin;
+            menu.Margin = new Thickness(menu.Margin.Left, ActivitiesToDo.Margin.Top, menu.Margin.Right, menu.Margin.Bottom);
+            restartGradient();
+            ActivitiesToDoGradient.StartPoint = new Point(0, 1);
             Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
             Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
@@ -104,7 +113,10 @@ namespace WpfApp1
 
         private void InterestingFactsClick(object sender, RoutedEventArgs e)
         {
-            menu.Margin = InterestingFacts.Margin;
+            //menu.Margin = InterestingFacts.Margin;
+            menu.Margin = new Thickness(menu.Margin.Left, InterestingFacts.Margin.Top, menu.Margin.Right, menu.Margin.Bottom);
+            restartGradient();
+            InterestingFactsGradient.StartPoint = new Point(0, 1);
             Grid.SetZIndex(AboutUsUserControlMenu, int.MinValue);
             Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
@@ -116,7 +128,10 @@ namespace WpfApp1
 
         private void AboutUSClick(object sender, RoutedEventArgs e)
         {
-            menu.Margin = AboutUS.Margin;
+            //menu.Margin = AboutUS.Margin;
+            menu.Margin = new Thickness(menu.Margin.Left, AboutUS.Margin.Top, menu.Margin.Right, menu.Margin.Bottom);
+            restartGradient();
+            AboutUsGradient.StartPoint = new Point(0, 1);
             Grid.SetZIndex(AboutUsUserControlMenu, int.MaxValue);
             Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
@@ -132,7 +147,11 @@ namespace WpfApp1
         }
         private void QuizButtonClick(object sender, RoutedEventArgs e)
         {
-            menu.Margin = QUIZbutton.Margin;
+            //menu.Margin = QUIZbutton.Margin;
+            menu.Margin = new Thickness(menu.Margin.Left, QUIZbutton.Margin.Top, menu.Margin.Right, menu.Margin.Bottom);
+            restartGradient();
+            QuizGradient.StartPoint = new Point(0, 1);
+
             Grid.SetZIndex(AboutUsUserControlMenu, int.MaxValue);
             Grid.SetZIndex(MenuUserControlMenu, int.MinValue);
             Grid.SetZIndex(MainCitiesUserControlMenu, int.MinValue);
@@ -149,6 +168,17 @@ namespace WpfApp1
         private void menu_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void restartGradient()
+        {
+            menu.Visibility = Visibility.Visible;
+            MainCitiesGradient.StartPoint=new Point(1, 1);
+            MapOfLebanonGradient.StartPoint= new Point(1, 1);
+            ActivitiesToDoGradient.StartPoint = new Point(1, 1);
+            InterestingFactsGradient.StartPoint = new Point(1, 1);
+            AboutUsGradient.StartPoint = new Point(1, 1);
+            QuizGradient.StartPoint = new Point(1, 1);
         }
     }
 }

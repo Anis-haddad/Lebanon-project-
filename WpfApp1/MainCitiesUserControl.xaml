@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WpfApp1"
              xmlns:folder_of_cities="clr-namespace:WpfApp1.folder_of_cities" x:Class="WpfApp1.MainCitiesUserControl"
              mc:Ignorable="d" 
-             d:DesignHeight="611" d:DesignWidth="1062" Background="#003366">
+             d:DesignHeight="594" d:DesignWidth="1050" Background="#FF191818">
     <UserControl.Resources>
         <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
         <Style x:Key="MyButtonStyle" TargetType="{x:Type Button}">
@@ -33,7 +33,7 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    <Grid Background="#003366">
+    <Grid Background="#FF191818">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="497*"/>
             <ColumnDefinition Width="565*"/>
@@ -64,18 +64,18 @@
             <folder_of_cities:BaalbakCityUserControl x:Name="BaalbakCityIsaCity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
             <folder_of_cities:ByblosCityUserControl x:Name="ByblosCityIsACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
             <folder_of_cities:FarayaCityUserControl x:Name="FarayaCityIsACity" Background="#003366" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Loaded="FarayaCityIsACity_Loaded" Visibility="Hidden"/>
-            <Image x:Name="harrissaImageClick"  HorizontalAlignment="Left" Height="188" Margin="32,29,0,0" VerticalAlignment="Top" Width="290" Source="/harrisa2.jpg" Stretch="Fill" MouseDown="Image_MouseDown_1"/>
-            <Image x:Name="FarayaImageClick" HorizontalAlignment="Left" Height="198" Margin="762,29,0,0" VerticalAlignment="Top" Width="290" Source="/Faraya2.jpg" Stretch="Fill" MouseDown="FarayaImageClick_MouseDown"/>
-            <Image x:Name="ByblosImageClick" HorizontalAlignment="Left" Height="188" Margin="762,306,0,0" VerticalAlignment="Top" Width="290" Source="/byb1.jpg" Stretch="UniformToFill" MouseDown="ByblosImageClick_MouseDown"/>
-            <Label Content="HARRISA" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="148,209,0,0" VerticalAlignment="Top"/>
-            <Label Content="BAALBAK" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="148,496,0,0" VerticalAlignment="Top"/>
-            <Label Content="FARAYA" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="880,227,0,0" VerticalAlignment="Top"/>
-            <Label Content="BYBLOS" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="868,496,0,0" VerticalAlignment="Top"/>
-            <Button Foreground="#33d6ff" FontSize="18" Name="TryAgainQuiz" Content="GO BACK"  Style="{StaticResource MyButtonStyle}" Height="42" Margin="372,551,372,18" Click="GoBackToMainCities"/>
-            <Label Content="BEIRUT"  Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="531,354,0,0" VerticalAlignment="Top"/>
+            <Image x:Name="harrissaImageClick"  HorizontalAlignment="Left" Height="188" Margin="10,10,0,0" VerticalAlignment="Top" Width="290" Source="/harrisa2.jpg" Stretch="Fill" MouseDown="Image_MouseDown_1"/>
+            <Image x:Name="FarayaImageClick" HorizontalAlignment="Left" Height="198" Margin="734,10,0,0" VerticalAlignment="Top" Width="290" Source="/Faraya2.jpg" Stretch="Fill" MouseDown="FarayaImageClick_MouseDown"/>
+            <Image x:Name="ByblosImageClick" HorizontalAlignment="Left" Height="188" Margin="734,316,0,0" VerticalAlignment="Top" Width="290" Source="/byb1.jpg" Stretch="UniformToFill" MouseDown="ByblosImageClick_MouseDown"/>
+            <Label Content="HARRISA" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="110,203,0,0" VerticalAlignment="Top"/>
+            <Label Content="BAALBAK" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="107,506,0,0" VerticalAlignment="Top"/>
+            <Label Content="FARAYA" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="850,208,0,0" VerticalAlignment="Top"/>
+            <Label Content="BYBLOS" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="850,496,0,0" VerticalAlignment="Top"/>
+            <Button Foreground="#33d6ff" FontSize="18" x:Name="MainCitiesGoBackButton" Content="GO BACK"  Style="{StaticResource MyButtonStyle}" Height="42" Margin="372,523,372,6" Click="GoBackToMainCities"/>
+            <Label Content="BEIRUT"  Foreground="#80bfff" FontSize="20" HorizontalAlignment="Center" Margin="0,363,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Image x:Name="beirutImageClick" HorizontalAlignment="Left" Height="189" Margin="408,161,0,0" VerticalAlignment="Top" Width="290" Source="/beirut street.png" Stretch="Fill" MouseDown="Image_MouseDown" Grid.ColumnSpan="2"/>
-        <Image x:Name="BaalbakImageClick" HorizontalAlignment="Left" Height="198" Margin="43,306,0,0" VerticalAlignment="Top" Width="290" MouseDown="BaalbakImageClick_MouseDown" Source="/baa1.jpg"/>
+        <Image x:Name="beirutImageClick" HorizontalAlignment="Left" Height="189" Margin="377,172,0,0" VerticalAlignment="Top" Width="290" Source="/beirut street.png" Stretch="Fill" MouseDown="Image_MouseDown" Grid.ColumnSpan="2"/>
+        <Image x:Name="BaalbakImageClick" HorizontalAlignment="Left" Height="198" Margin="10,306,0,0" VerticalAlignment="Top" Width="290" MouseDown="BaalbakImageClick_MouseDown" Source="/baa1.jpg"/>
     </Grid>
 
 </UserControl>

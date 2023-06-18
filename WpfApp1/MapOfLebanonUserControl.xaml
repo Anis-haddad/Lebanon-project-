@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:WpfApp1"
              xmlns:folder_of_cities="clr-namespace:WpfApp1.folder_of_cities"
              mc:Ignorable="d" 
-             d:DesignHeight="611" d:DesignWidth="1062" Background="#FFCE00FF">
-    <Grid Background="#003366">
+             d:DesignHeight="594" d:DesignWidth="1050" Background="#FFCE00FF">
+    <Grid Background="#FF191818">
 
         <Image x:Name="MapOfLebanon" HorizontalAlignment="Left" Visibility="Visible"  Stretch="fill" Source="/RedLebanon2.png" Height="591" VerticalAlignment="Center" Width="525"/>
         <RichTextBox Margin="531,108,16,382" Background="#80bfff" FontSize="17" FontWeight="ExtraBold">
@@ -18,11 +18,11 @@ Area of Lebanon is 10452 km2,it is one of the smallest coutnry in middle east"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Ellipse x:Name="ByblosMapElipse" HorizontalAlignment="Left" Height="28" Margin="182,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="ByblosMapElipse_MouseEnter" MouseLeave="ByblosMapElipse_MouseLeave" MouseDown="ByblosMapElipse_MouseDown"/>
-        <Ellipse x:Name="BeirutMapElipse" HorizontalAlignment="Left" Height="28" Margin="133,282,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="BeirutMapElipse_MouseEnter" MouseLeave="BeirutMapElipse_MouseLeave" MouseDown="BeirutMapElipse_MouseDown"/>
-        <Ellipse x:Name="BaalbakMapElipse" HorizontalAlignment="Left" Height="28" Margin="392,238,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.167,0.033" MouseEnter="BaalbakMapElipse_MouseEnter" MouseLeave="BaalbakMapElipse_MouseLeave" MouseDown="BaalbakMapElipse_MouseDown"/>
-        <Ellipse x:Name="HarissaMapElipse" HorizontalAlignment="Left" Height="28" Margin="255,284,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="HarissaMapElipse_MouseEnter" MouseLeave="HarissaMapElipse_MouseLeave" MouseDown="HarissaMapElipse_MouseDown"/>
-        <Ellipse x:Name="FarayaMapElipse" HorizontalAlignment="Left" Height="28" Margin="227,366,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="FarayaMapElipse_MouseEnter" MouseLeave="FarayaMapElipse_MouseLeave" MouseDown="FarayaMapElipse_MouseDown"/>
+        <Ellipse x:Name="ByblosMapElipse" HorizontalAlignment="Left" Height="28" Margin="182,179,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="ByblosMapElipse_MouseEnter" MouseLeave="ByblosMapElipse_MouseLeave" MouseDown="ByblosMapElipse_MouseDown"/>
+        <Ellipse x:Name="BeirutMapElipse" HorizontalAlignment="Left" Height="28" Margin="133,274,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="BeirutMapElipse_MouseEnter" MouseLeave="BeirutMapElipse_MouseLeave" MouseDown="BeirutMapElipse_MouseDown"/>
+        <Ellipse x:Name="BaalbakMapElipse" HorizontalAlignment="Left" Height="28" Margin="391,230,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.167,0.033" MouseEnter="BaalbakMapElipse_MouseEnter" MouseLeave="BaalbakMapElipse_MouseLeave" MouseDown="BaalbakMapElipse_MouseDown"/>
+        <Ellipse x:Name="HarissaMapElipse" HorizontalAlignment="Left" Height="28" Margin="255,275,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="HarissaMapElipse_MouseEnter" MouseLeave="HarissaMapElipse_MouseLeave" MouseDown="HarissaMapElipse_MouseDown"/>
+        <Ellipse x:Name="FarayaMapElipse" HorizontalAlignment="Left" Height="28" Margin="227,358,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="FarayaMapElipse_MouseEnter" MouseLeave="FarayaMapElipse_MouseLeave" MouseDown="FarayaMapElipse_MouseDown"/>
 
         <folder_of_cities:BeirutUserControl x:Name="BeirutisACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
         <folder_of_cities:ManuMainCitiesUserControl x:Name="MenuMainCities" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>

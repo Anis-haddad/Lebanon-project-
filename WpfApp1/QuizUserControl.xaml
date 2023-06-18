@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
-             d:DesignHeight="611" d:DesignWidth="1062" Background="#FF1BEBEF">
+             d:DesignHeight="615" d:DesignWidth="1062" Background="#FF1BEBEF">
 
     <UserControl.Resources>
         <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
@@ -34,7 +34,7 @@
         </Style>
     </UserControl.Resources>
 
-    <Canvas Name="myCanvas" Background="#003366">
+    <Canvas Name="myCanvas" Background="#FF191818">
         <Label Name="scoreText" FontSize="28" Height="74" Width="355" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF33D6FF">Score: 0/10</Label>
         <Label Name="questionOrder" FontSize="18" Canvas.Left="420" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden">Questions</Label>
         <Image x:Name="qImage" Source="/Question3.png" Height="190" Width="292" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="319" Canvas.Top="103" Stretch="Fill" />

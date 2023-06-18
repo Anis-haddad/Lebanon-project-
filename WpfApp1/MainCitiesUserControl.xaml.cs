@@ -40,6 +40,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Collapsed;
             //Grid.SetZIndex(MenuUserControlMenu, int.MaxValue);
         }
         private void GoBackToMainCities(object sender, RoutedEventArgs e)
@@ -57,6 +58,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Collapsed;
         }
         private void BeirutButton(object sender, RoutedEventArgs e)
         {
@@ -73,6 +75,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         
@@ -94,6 +97,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         private void ByblosCityButton(object sender, RoutedEventArgs e)
@@ -111,6 +115,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Visible;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         private void FarayaCityButton(object sender, RoutedEventArgs e)
@@ -129,6 +134,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Visible;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         private void BaalbakCityButton(object sender, RoutedEventArgs e)
@@ -146,6 +152,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Visible;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         private void FarayaCityIsACity_Loaded(object sender, RoutedEventArgs e)
@@ -168,6 +175,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         private void Image_MouseDown_1(object sender, MouseButtonEventArgs e)
@@ -188,6 +196,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         private void FarayaImageClick_MouseDown(object sender, MouseButtonEventArgs e)
@@ -207,6 +216,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Visible;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         private void ByblosImageClick_MouseDown(object sender, MouseButtonEventArgs e)
@@ -225,6 +235,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Visible;
             BaalbakCityIsaCity.Visibility = Visibility.Collapsed;
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
 
         private void BaalbakImageClick_MouseDown(object sender, MouseButtonEventArgs e)
@@ -243,7 +254,7 @@ namespace WpfApp1
             FarayaCityIsACity.Visibility = Visibility.Collapsed;
             ByblosCityIsACity.Visibility = Visibility.Collapsed;
             BaalbakCityIsaCity.Visibility = Visibility.Visible;
-
+            MainCitiesGoBackButton.Visibility = Visibility.Visible;
         }
     }
 }
