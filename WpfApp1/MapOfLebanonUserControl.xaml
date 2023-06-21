@@ -20,8 +20,13 @@
                         BorderThickness="2"
                         Padding="4,2" 
                         BorderBrush="DarkGray" 
-                        CornerRadius="3" 
-                        Background="#003366">
+                        CornerRadius="3">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FF212A37" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
                         <ControlTemplate.Triggers>
@@ -38,14 +43,11 @@
     <Grid Background="#FF191818">
 
         <Image x:Name="MapOfLebanon" HorizontalAlignment="Left" Visibility="Visible"  Stretch="fill" Source="/RedLebanon2.png" Height="591" VerticalAlignment="Center" Width="525" Margin="10,10,10,10"/>
-        <RichTextBox Margin="540,108,16,285" Background="#FF191818" FontSize="17" FontWeight="ExtraBold" FontFamily="Traditional Arabic" Foreground="#33d6ff">
-            <FlowDocument>
-                <Paragraph>
-                    <Run Text="Lebanon shares borders with Syria to the north and east, and Israel to the south. Its western coastline stretches along the Mediterranean Sea.
-Area of Lebanon is 10452 km2,it is one of the smallest coutnry in middle east"/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
+        <TextBlock Margin="540,108,16,285" Background="#FF191818" FontSize="17" FontWeight="ExtraBold" FontFamily="Traditional Arabic" Foreground="#33d6ff" TextWrapping="Wrap" TextAlignment="Center" >
+            Lebanon shares borders with Syria to the north and east, and Israel to the south. Its western coastline stretches along the Mediterranean Sea.
+            Area of Lebanon is 10452 km2,it is one of the smallest coutnry in middle east.
+        </TextBlock>
+
         <Ellipse x:Name="ByblosMapElipse" HorizontalAlignment="Left" Height="28" Margin="192,168,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="ByblosMapElipse_MouseEnter" MouseLeave="ByblosMapElipse_MouseLeave" MouseDown="ByblosMapElipse_MouseDown"/>
         <Ellipse x:Name="BeirutMapElipse" HorizontalAlignment="Left" Height="28" Margin="143,262,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="BeirutMapElipse_MouseEnter" MouseLeave="BeirutMapElipse_MouseLeave" MouseDown="BeirutMapElipse_MouseDown"/>
         <Ellipse x:Name="BaalbakMapElipse" HorizontalAlignment="Left" Height="28" Margin="401,218,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.167,0.033" MouseEnter="BaalbakMapElipse_MouseEnter" MouseLeave="BaalbakMapElipse_MouseLeave" MouseDown="BaalbakMapElipse_MouseDown"/>
@@ -58,6 +60,6 @@ Area of Lebanon is 10452 km2,it is one of the smallest coutnry in middle east"/>
         <folder_of_cities:BaalbakCityUserControl x:Name="BaalbakCityIsaCity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
         <folder_of_cities:ByblosCityUserControl x:Name="ByblosCityIsACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
         <folder_of_cities:FarayaCityUserControl x:Name="FarayaCityIsACity" Background="#003366" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
-        <Button x:Name="GoBackFromMainCities" Content="GO BACK" Foreground="#33d6ff" HorizontalAlignment="Left" Margin="419,523,0,0" VerticalAlignment="Top" FontSize="18" Height="42" Width="224" MouseDown="GoBackFromMainCities_MouseDown" Click="GoBackFromMainCities_Click" Style="{StaticResource MyButtonStyle}" Visibility="Hidden"/>
+        <Button x:Name="GoBackFromMainCities" Content="GO BACK" Foreground="#33d6ff" HorizontalAlignment="Center" Margin="0,523,0,0" VerticalAlignment="Top" FontSize="18" Height="42" Width="300" MouseDown="GoBackFromMainCities_MouseDown" Click="GoBackFromMainCities_Click" Style="{StaticResource MyButtonStyle}" Visibility="Hidden"/>
     </Grid>
 </UserControl>

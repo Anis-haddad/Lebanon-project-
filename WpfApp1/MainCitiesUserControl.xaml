@@ -19,8 +19,13 @@
                         BorderThickness="2"
                         Padding="4,2" 
                         BorderBrush="DarkGray" 
-                        CornerRadius="3" 
-                        Background="#003366">
+                        CornerRadius="3">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FF212A37" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
                         <ControlTemplate.Triggers>
@@ -77,8 +82,8 @@
             <Label Content="BAALBAK" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="107,496,0,0" VerticalAlignment="Top"/>
             <Label Content="FARAYA" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="850,208,0,0" VerticalAlignment="Top"/>
             <Label Content="BYBLOS" Foreground="#80bfff" FontSize="20" HorizontalAlignment="Left" Margin="850,487,0,0" VerticalAlignment="Top"/>
-            <Button Foreground="#33d6ff" FontSize="18" x:Name="MainCitiesGoBackButton" Content="GO BACK"  Style="{StaticResource MyButtonStyle}" Height="42" Margin="376,525,369,3" Click="GoBackToMainCities"/>
             <Label Content="BEIRUT"  Foreground="#80bfff" FontSize="20" HorizontalAlignment="Center" Margin="0,373,0,0" VerticalAlignment="Top"/>
+            <Button Foreground="#33d6ff" FontSize="18" x:Name="MainCitiesGoBackButton" Content="GO BACK"  Style="{StaticResource MyButtonStyle}" Height="42" Margin="377,520,378,0" Click="GoBackToMainCities" Width="300"/>
         </Grid>
     </Grid>
 </UserControl>

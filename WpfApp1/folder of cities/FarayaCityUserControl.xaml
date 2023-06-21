@@ -10,13 +10,8 @@
         <Image HorizontalAlignment="Left" Height="296" Margin="10,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/faraya1.jpg" Stretch="Fill"/>
         <Image HorizontalAlignment="Center" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/Faraya2.jpg" Stretch="Fill"/>
         <Image HorizontalAlignment="Right" Height="296" Margin="0,10,10,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/faraya3.jpg" Stretch="Fill"/>
-        <RichTextBox Margin="10,320,10,10"  Background="#FF191818" >
-            <FlowDocument>
-                <Paragraph >
-                    <Run FontSize="24" Foreground="#80bfff" FontFamily="Traditional Arabic" Text="Faraya, nestled in the mountains of Lebanon, is a popular destination for winter sports enthusiasts. Known for its ski resorts, it offers breathtaking slopes and stunning mountain views. Faraya attracts both locals and tourists who come to enjoy skiing, snowboarding, and other winter activities. The city also features cozy chalets, hotels, and restaurants, providing a welcoming atmosphere for visitors. Beyond the winter season, Faraya's picturesque landscapes make it an ideal spot for hiking and enjoying the beauty of Lebanon's mountainous region."/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
-
+        <TextBlock Margin="10,320,10,10" Background="#FF191818" FontSize="24" Foreground="#80bfff" FontFamily="Traditional Arabic" TextWrapping="Wrap">
+            Faraya, nestled in the mountains of Lebanon, is a popular destination for winter sports enthusiasts. Known for its ski resorts, it offers breathtaking slopes and stunning mountain views. Faraya attracts both locals and tourists who come to enjoy skiing, snowboarding, and other winter activities. The city also features cozy chalets, hotels, and restaurants, providing a welcoming atmosphere for visitors. Beyond the winter season, Faraya's picturesque landscapes make it an ideal spot for hiking and enjoying the beauty of Lebanon's mountainous region.
+        </TextBlock>
     </Grid>
 </UserControl>
