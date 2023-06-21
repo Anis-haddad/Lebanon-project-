@@ -88,8 +88,8 @@ namespace WpfApp1
                 ans4.Visibility=Visibility.Hidden;
                 txtQuestion.Visibility=Visibility.Hidden;
                 qImage.Visibility=Visibility.Hidden;
-                Canvas.SetLeft(scoreText, 319);
-                Canvas.SetTop(scoreText, 103);
+                Canvas.SetLeft(scoreText, 350);
+                Canvas.SetTop(scoreText, 100);
                 TryAgainQuiz.Visibility = Visibility.Visible;
             }
             // below we are running a foreach loop where will check for each button inside of the canvas and when we find them we will set their tag to 0 and background to dakr salmon colour

@@ -5,15 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1.folder_of_cities"
              mc:Ignorable="d" 
-             d:DesignHeight="551" d:DesignWidth="1062" Background="#003366">
+             d:DesignHeight="520" d:DesignWidth="1055" Background="#FF191818">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb1.jpg" Stretch="Fill"/>
-        <Image HorizontalAlignment="Left" Height="296" Margin="341,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb2.jpg" Stretch="Fill"/>
-        <Image HorizontalAlignment="Left" Height="296" Margin="682,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb3.jpg" Stretch="Fill"/>
-        <RichTextBox Margin="0,328,0,0"  Background="#003366" BorderBrush="#003366">
+        <Image HorizontalAlignment="Left" Height="296" Margin="10,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb1.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Center" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb2.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Right" Height="296" Margin="0,10,10,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/byb3.jpg" Stretch="Fill"/>
+        <RichTextBox Margin="10,320,10,10"  Background="#FF191818">
             <FlowDocument>
                 <Paragraph>
-                    <Run FontSize="24" Foreground="#80bfff" Text="Byblos, located along the Mediterranean coast of Lebanon, is an enchanting city steeped in history. As one of the oldest continuously inhabited cities in the world, Byblos boasts a rich past that dates back over 7,000 years. It is renowned for its well-preserved archaeological sites, including ancient Phoenician temples, Roman ruins, and a medieval Crusader castle. Byblos is also credited with being the birthplace of the Phoenician alphabet, which became the basis for many modern writing systems."/>
+                    <Run FontSize="24" Foreground="#80bfff" FontFamily="Traditional Arabic" Text="Byblos, located along the Mediterranean coast of Lebanon, is an enchanting city steeped in history. As one of the oldest continuously inhabited cities in the world, Byblos boasts a rich past that dates back over 7,000 years. It is renowned for its well-preserved archaeological sites, including ancient Phoenician temples, Roman ruins, and a medieval Crusader castle. Byblos is also credited with being the birthplace of the Phoenician alphabet, which became the basis for many modern writing systems."/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>

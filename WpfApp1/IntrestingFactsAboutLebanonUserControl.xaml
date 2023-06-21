@@ -3,49 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WpfApp1"
+             xmlns:local="clr-namespace:WpfApp1" xmlns:sys="clr-namespace:System;assembly=netstandard"
              mc:Ignorable="d" 
-             d:DesignHeight="611" d:DesignWidth="1062" Background="#FF191818">
+             d:DesignHeight="570" d:DesignWidth="1055" Background="#FF191818">
             <!--#003366-->
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="221*"/>
-            <RowDefinition Height="4*"/>
-        </Grid.RowDefinitions>
-        <RichTextBox Margin="134,91,90,43" Background="#003366" BorderBrush="#003366">
-            <FlowDocument>
-                <Paragraph>
-                    <Run FontSize="18" Foreground="#80bfff" Text="1. Lebanon is one of the oldest inhabited countries in the world, with evidence of human presence dating back over 7,000 years.
-                                             
-                         
-                         
-                         2. Lebanon is known as the Land of the Cedars due to its iconic cedar trees, which are featured on the country's flag.
-                                                                
-                       
-                                                         3. Beirut, the capital of Lebanon, was once known as the Paris of the Middle East for its vibrant cultural scene and cosmopolitan atmosphere.
-                                                                                                                    4. Lebanon is home to a diverse population, consisting of various religious and ethnic groups, including Maronite Christians, Sunni and Shia Muslims, and Druze.
-
-                                                                                                                                                                   
-                                                                
-                                                   5. The Lebanese cuisine is renowned worldwide for its delicious flavors and variety. It includes popular dishes like hummus, falafel, tabbouleh, and shawarma.
-
-                                                  
-                                                                                                             
-                                                                                                                 6. Byblos, an ancient city in Lebanon, is one of the oldest continuously inhabited cities in the world and is recognized as a UNESCO World Heritage Site.
-                                                                                            7. Lebanon has a rich history of winemaking, with vineyards dating back thousands of years. The country produces a wide range of wines, especially in the Bekaa Valley region.
-
-                                                                     
-                                                        
-                                                                
-                                               8. The Baalbek Temple complex in Lebanon is a remarkable archaeological site and is home to some of the largest Roman ruins in the world, including the Temple of Jupiter.
-
-                                                       
-                                                              
-                                                             
-                                                                        9. Lebanon has a diverse landscape that includes beautiful coastline, snow-capped mountains, fertile valleys, and picturesque villages."/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
-
+        <TextBlock Text="Here are some interesting facts about Lebanon:" Margin="0 15 5 10" FontSize="26" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FF33D6FF" />
+        <ListBox Margin="20 20 20 20" Background="#FF191818" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <ListBox.ItemTemplate >
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 5 10">
+                        <TextBlock Text="&#8226;" Margin="0 0 5 10" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF33D6FF" />
+                        <TextBlock Text="{Binding}" Width="930" TextWrapping="Wrap" FontSize="15" Foreground="#FF33D6FF" VerticalAlignment="Center" FontWeight="Bold"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.Items>
+                <sys:String>Lebanon is one of the oldest inhabited countries in the world, with evidence of human presence dating back over 7,000 years.</sys:String>
+                <sys:String>Lebanon is known as the Land of the Cedars due to its iconic cedar trees, which are featured on the country's flag.</sys:String>
+                <sys:String>Beirut, the capital of Lebanon, was once known as the Paris of the Middle East for its vibrant cultural scene and cosmopolitan atmosphere.</sys:String>
+                <sys:String>Lebanon is home to a diverse population, consisting of various religious and ethnic groups, including Maronite Christians, Sunni and Shia Muslims, and Druze.</sys:String>
+                <sys:String>The Lebanese cuisine is renowned worldwide for its delicious flavors and variety. It includes popular dishes like hummus, falafel, tabbouleh, and shawarma.</sys:String>
+                <sys:String>Byblos, an ancient city in Lebanon, is one of the oldest continuously inhabited cities in the world and is recognized as a UNESCO World Heritage Site.</sys:String>
+                <sys:String>Lebanon has a rich history of winemaking, with vineyards dating back thousands of years.
+ The country produces a wide range of wines, especially in the Bekaa Valley region.</sys:String>
+                <sys:String>The Baalbek Temple complex in Lebanon is a remarkable archaeological site and is home to some of the largest Roman ruins in the world, including the Temple of Jupiter.</sys:String>
+                <sys:String>Lebanon has a diverse landscape that includes beautiful coastline, snow-capped mountains, fertile valleys, and picturesque villages.</sys:String>
+            </ListBox.Items>
+        </ListBox>
     </Grid>
 </UserControl>

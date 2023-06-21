@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WpfApp1"
+             xmlns:local="clr-namespace:WpfApp1" xmlns:sys="clr-namespace:System;assembly=netstandard"
              mc:Ignorable="d" 
              d:DesignHeight="611" d:DesignWidth="1062" Background="#FF191818">
 
@@ -16,13 +16,7 @@
             <Setter Property="FontSize" Value="16" />
             <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="Height" Value="35" />
-
-
-
         </Style>
-
-
-
     </UserControl.Resources>
     <!--<Grid>
         <Label Content="Label 1" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource ModernLabelStyle}" />
@@ -30,15 +24,8 @@
         <Label Content="Label 3" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource ModernLabelStyle}" />
     </Grid>-->
     <Grid>
-        <Label Content="1. Explore the historic city of Byblos: Visit ancient ruins, stroll through the charming streets, and enjoy the coastal views." HorizontalAlignment="Left" Background="#80bfff"  Height="35" Margin="15,10,0,0" VerticalAlignment="Top" Width="1040" Style="{StaticResource ModernLabelStyle}" RenderTransformOrigin="0.5,0.5" >
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.034"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
+        <!--<Label Content="1. Explore the historic city of Byblos: Visit ancient ruins, stroll through the charming streets, and enjoy the coastal views." HorizontalAlignment="Left" Background="#80bfff"  Height="35" Margin="15,10,0,0" VerticalAlignment="Top" Width="1040" Style="{StaticResource ModernLabelStyle}" RenderTransformOrigin="0.5,0.5" >
+            
         </Label>
         <Label Content="2. Relax on the pristine beaches of Batroun or Tyre: Enjoy sunbathing, swimming, and water sports in these coastal towns.
                                                
@@ -50,7 +37,26 @@
         <Label Content="5. Visit the Roman ruins of Baalbek: Marvel at the majestic temples and ruins of this UNESCO World Heritage site.
                                                                " HorizontalAlignment="Left" Margin="15,410,0,0" VerticalAlignment="Top" Height="35" Width="1040"  Background="#80bfff"  Style="{StaticResource ModernLabelStyle}" />
         <Label Content="6. Explore the picturesque vineyards of the Bekaa Valley: Take a wine tour, taste local wines, and enjoy the beautiful surroundings.
-                                          " HorizontalAlignment="Left" Margin="15,510,0,0" VerticalAlignment="Top" Height="35" Width="1040"  Background="#80bfff" Style="{StaticResource ModernLabelStyle}" />
+                                          " HorizontalAlignment="Left" Margin="15,510,0,0" VerticalAlignment="Top" Height="35" Width="1040"  Background="#80bfff" Style="{StaticResource ModernLabelStyle}" />-->
 
+        <TextBlock Text="Discover New Adventures: Activities for Everyone:" Margin="0,66,0,0" FontSize="26" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FF33D6FF" />
+        <ListBox Margin="20 20 20 20" Background="#FF191818" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <ListBox.ItemTemplate >
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 5 10">
+                        <!--<TextBlock Text="&#8226;" Margin="0 0 5 10" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF33D6FF" />-->
+                        <TextBlock Text="{Binding}" Width="930" TextWrapping="Wrap" FontSize="16" Foreground="#FF33D6FF" VerticalAlignment="Center" FontWeight="Bold"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.Items>
+                <sys:String>1. Explore the historic city of Byblos: Visit ancient ruins, stroll through the charming streets, and enjoy the coastal views.</sys:String>
+                <sys:String>2. Lebanon is known as the Land of the Cedars due to its iconic cedar trees, which are featured on the country's flag.</sys:String>
+                <sys:String>3. Beirut, the capital of Lebanon, was once known as the Paris of the Middle East for its vibrant cultural scene and cosmopolitan atmosphere.</sys:String>
+                <sys:String>4. Lebanon is home to a diverse population, consisting of various religious and ethnic groups, including Maronite Christians, Sunni and Shia Muslims, and Druze.</sys:String>
+                <sys:String>5. The Lebanese cuisine is renowned worldwide for its delicious flavors and variety. It includes popular dishes like hummus, falafel, tabbouleh, and shawarma.</sys:String>
+                <sys:String>6. Byblos, an ancient city in Lebanon, is one of the oldest continuously inhabited cities in the world and is recognized as a UNESCO World Heritage Site.</sys:String>
+                </ListBox.Items>
+        </ListBox>
     </Grid>
 </UserControl>

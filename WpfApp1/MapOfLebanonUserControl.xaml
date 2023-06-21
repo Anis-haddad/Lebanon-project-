@@ -6,11 +6,39 @@
              xmlns:local="clr-namespace:WpfApp1"
              xmlns:folder_of_cities="clr-namespace:WpfApp1.folder_of_cities"
              mc:Ignorable="d" 
-             d:DesignHeight="594" d:DesignWidth="1050" Background="#FFCE00FF">
+             d:DesignHeight="570" d:DesignWidth="1055" Background="#FFCE00FF">
+
+    <UserControl.Resources>
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+        <Style x:Key="MyButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" 
+                        BorderThickness="2"
+                        Padding="4,2" 
+                        BorderBrush="DarkGray" 
+                        CornerRadius="3" 
+                        Background="#003366">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="black" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
     <Grid Background="#FF191818">
 
-        <Image x:Name="MapOfLebanon" HorizontalAlignment="Left" Visibility="Visible"  Stretch="fill" Source="/RedLebanon2.png" Height="591" VerticalAlignment="Center" Width="525"/>
-        <RichTextBox Margin="531,108,16,382" Background="#80bfff" FontSize="17" FontWeight="ExtraBold">
+        <Image x:Name="MapOfLebanon" HorizontalAlignment="Left" Visibility="Visible"  Stretch="fill" Source="/RedLebanon2.png" Height="591" VerticalAlignment="Center" Width="525" Margin="10,10,10,10"/>
+        <RichTextBox Margin="540,108,16,285" Background="#FF191818" FontSize="17" FontWeight="ExtraBold" FontFamily="Traditional Arabic" Foreground="#33d6ff">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="Lebanon shares borders with Syria to the north and east, and Israel to the south. Its western coastline stretches along the Mediterranean Sea.
@@ -18,11 +46,11 @@ Area of Lebanon is 10452 km2,it is one of the smallest coutnry in middle east"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Ellipse x:Name="ByblosMapElipse" HorizontalAlignment="Left" Height="28" Margin="182,179,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="ByblosMapElipse_MouseEnter" MouseLeave="ByblosMapElipse_MouseLeave" MouseDown="ByblosMapElipse_MouseDown"/>
-        <Ellipse x:Name="BeirutMapElipse" HorizontalAlignment="Left" Height="28" Margin="133,274,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="BeirutMapElipse_MouseEnter" MouseLeave="BeirutMapElipse_MouseLeave" MouseDown="BeirutMapElipse_MouseDown"/>
-        <Ellipse x:Name="BaalbakMapElipse" HorizontalAlignment="Left" Height="28" Margin="391,230,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.167,0.033" MouseEnter="BaalbakMapElipse_MouseEnter" MouseLeave="BaalbakMapElipse_MouseLeave" MouseDown="BaalbakMapElipse_MouseDown"/>
-        <Ellipse x:Name="HarissaMapElipse" HorizontalAlignment="Left" Height="28" Margin="255,275,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="HarissaMapElipse_MouseEnter" MouseLeave="HarissaMapElipse_MouseLeave" MouseDown="HarissaMapElipse_MouseDown"/>
-        <Ellipse x:Name="FarayaMapElipse" HorizontalAlignment="Left" Height="28" Margin="227,358,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="FarayaMapElipse_MouseEnter" MouseLeave="FarayaMapElipse_MouseLeave" MouseDown="FarayaMapElipse_MouseDown"/>
+        <Ellipse x:Name="ByblosMapElipse" HorizontalAlignment="Left" Height="28" Margin="192,168,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="ByblosMapElipse_MouseEnter" MouseLeave="ByblosMapElipse_MouseLeave" MouseDown="ByblosMapElipse_MouseDown"/>
+        <Ellipse x:Name="BeirutMapElipse" HorizontalAlignment="Left" Height="28" Margin="143,262,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="BeirutMapElipse_MouseEnter" MouseLeave="BeirutMapElipse_MouseLeave" MouseDown="BeirutMapElipse_MouseDown"/>
+        <Ellipse x:Name="BaalbakMapElipse" HorizontalAlignment="Left" Height="28" Margin="401,218,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.167,0.033" MouseEnter="BaalbakMapElipse_MouseEnter" MouseLeave="BaalbakMapElipse_MouseLeave" MouseDown="BaalbakMapElipse_MouseDown"/>
+        <Ellipse x:Name="HarissaMapElipse" HorizontalAlignment="Left" Height="28" Margin="265,263,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="HarissaMapElipse_MouseEnter" MouseLeave="HarissaMapElipse_MouseLeave" MouseDown="HarissaMapElipse_MouseDown"/>
+        <Ellipse x:Name="FarayaMapElipse" HorizontalAlignment="Left" Height="28" Margin="237,346,0,0" Stroke="Black" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.167,0.033" MouseEnter="FarayaMapElipse_MouseEnter" MouseLeave="FarayaMapElipse_MouseLeave" MouseDown="FarayaMapElipse_MouseDown"/>
 
         <folder_of_cities:BeirutUserControl x:Name="BeirutisACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
         <folder_of_cities:ManuMainCitiesUserControl x:Name="MenuMainCities" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
@@ -30,9 +58,6 @@ Area of Lebanon is 10452 km2,it is one of the smallest coutnry in middle east"/>
         <folder_of_cities:BaalbakCityUserControl x:Name="BaalbakCityIsaCity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
         <folder_of_cities:ByblosCityUserControl x:Name="ByblosCityIsACity" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
         <folder_of_cities:FarayaCityUserControl x:Name="FarayaCityIsACity" Background="#003366" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="551" Width="1062" Visibility="Hidden"/>
-        <Button x:Name="GoBackFromMainCities" Content="Go back" HorizontalAlignment="Center" Margin="0,556,0,0" VerticalAlignment="Top" Width="112" MouseDown="GoBackFromMainCities_MouseDown" Click="GoBackFromMainCities_Click" Height="31" Visibility="Hidden"/>
-
-
-
+        <Button x:Name="GoBackFromMainCities" Content="GO BACK" Foreground="#33d6ff" HorizontalAlignment="Left" Margin="419,523,0,0" VerticalAlignment="Top" FontSize="18" Height="42" Width="224" MouseDown="GoBackFromMainCities_MouseDown" Click="GoBackFromMainCities_Click" Style="{StaticResource MyButtonStyle}" Visibility="Hidden"/>
     </Grid>
 </UserControl>
