@@ -77,7 +77,7 @@
             </DockPanel>
             <DockPanel LastChildFill="False" DockPanel.Dock="Top" Height="100" Background="Black">
                 <!--<Label Content="Welcome to Lebanon" Foreground="#33d6ff" FontWeight="ExtraBold" DockPanel.Dock="Top" Height="100" HorizontalAlignment="Center" FontSize="76" FontFamily="Traditional Arabic" FontStyle="Italic"/>-->
-                <TextBlock Text="Welcome to Lebanon" Foreground="#33d6ff" FontWeight="ExtraBold" DockPanel.Dock="Top" Height="100" HorizontalAlignment="Center" FontSize="76" FontFamily="Traditional Arabic" FontStyle="Italic" TextDecorations="Underline"/>
+                <TextBlock Text="Welcome to Lebanon" Foreground="#33d6ff" FontWeight="ExtraBold" DockPanel.Dock="Top" Height="100" FontSize="76" FontFamily="Traditional Arabic" FontStyle="Italic" TextDecorations="Underline" Width="803"/>
             </DockPanel>
             <DockPanel LastChildFill="False" DockPanel.Dock="Top" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#00264d">
                 <Grid DockPanel.Dock="Top" Width="auto" Height="auto" Background="black">

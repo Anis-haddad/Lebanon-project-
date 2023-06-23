@@ -11,7 +11,7 @@
         <Image HorizontalAlignment="Center" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/beirut street.png" Stretch="Fill"/>
         <Image HorizontalAlignment="Right" Height="296" Margin="0,10,10,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/beirut1.jpg" Stretch="Fill"/>
         <local:ByblosCityUserControl HorizontalAlignment="Left" Margin="1437,292,0,0" VerticalAlignment="Top"/>
-        <TextBlock Margin="10,320,10,10" Background="#FF191818" FontSize="24" Foreground="#80bfff" FontFamily="Traditional Arabic" TextWrapping="Wrap">
+        <TextBlock Margin="10,320,10,10" Background="#FF191818" FontSize="22" Foreground="#80bfff" FontFamily="Traditional Arabic" TextWrapping="Wrap">
         Beirut, Lebanon's capital, is a historic city with a blend of cultures. It is one of the oldest inhabited cities globally, showcasing diverse architectural styles. Despite periods of conflict, Beirut has rebuilt into a thriving cultural hub with a vibrant nightlife and renowned culinary scene. It is also home to the prestigious American University of Beirut and boasts a dynamic arts and music scene.
         </TextBlock>
     </Grid>

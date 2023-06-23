@@ -10,7 +10,7 @@
         <Image HorizontalAlignment="Left" Height="296" Margin="10,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/harrisa1.jpg" Stretch="Fill"/>
         <Image HorizontalAlignment="Center" Height="296" Margin="0,10,0,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/harrisa2.jpg" Stretch="Fill"/>
         <Image HorizontalAlignment="Right" Height="296" Margin="0,10,10,0" VerticalAlignment="Top" Width="341" Source="/folder of cities/harissa4.jpg" Stretch="Fill"/>
-        <TextBlock Margin="10,320,10,10" Background="#FF191818" FontSize="24" Foreground="#80bfff" FontFamily="Traditional Arabic" TextWrapping="Wrap">
+        <TextBlock Margin="10,320,10,10" Background="#FF191818" FontSize="22" Foreground="#80bfff" FontFamily="Traditional Arabic" TextWrapping="Wrap">
             Harissa is a picturesque city located in Lebanon, renowned for its iconic Our Lady of Lebanon statue. Perched atop a hill, the statue offers breathtaking panoramic views of the surrounding landscape and the Mediterranean Sea. The city is a popular pilgrimage site for both locals and tourists, attracting visitors with its serene atmosphere and religious significance. In addition to its spiritual allure, Harissa also offers charming streets lined with shops and restaurants, allowing visitors to indulge in Lebanese cuisine and shop for unique souvenirs.
         </TextBlock>
     </Grid>
